@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <text x="{{ layout.margin }}" y="{{ layout.margin + 18 }}" class="small">{{ org }} PROCESS MAP</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 34 }}" class="title">{{ title }}</text>
+  {% for lane in lanes %}
+  <line x1="{{ layout.margin }}" y1="{{ lane.y }}" x2="{{ canvas.width - layout.margin }}" y2="{{ lane.y }}" stroke="{{ palette.line }}" stroke-width="2"/>
+  <text x="{{ layout.margin }}" y="{{ lane.y - 10 }}" class="muted">{{ lane.label }}</text>
+  {% endfor %}
+  {% for edge in edges %}
+  <path d="M {{ edge.x1 }} {{ edge.y1 }} L {{ edge.x2 }} {{ edge.y2 }}" class="accent-line"/>
+  {% endfor %}
+  {% for node in nodes %}
+  <g>
+    <rect x="{{ node.x - 78 }}" y="{{ node.y - 42 }}" width="156" height="84" rx="14" class="panel"/>
+    <circle cx="{{ node.x - 52 }}" cy="{{ node.y }}" r="18" fill="{{ palette.accent }}"/>
+    <text x="{{ node.x - 24 }}" y="{{ node.y - 6 }}" class="body" font-weight="800">{{ node.title }}</text>
+    <text x="{{ node.x - 24 }}" y="{{ node.y + 20 }}" class="muted">{{ node.label }}</text>
+  </g>
+  {% endfor %}
+  <text x="{{ layout.margin }}" y="{{ canvas.height - layout.margin }}" class="muted">{{ month }} {{ year }} / {{ code }}</text>
+</svg>

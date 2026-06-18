@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:f7c0444e189f5a9a3113ab02dc977dadbfcb84b3fba57ac414844964ea9af23a",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 7,
+    "cards": 5,
+    "nodes": 7,
+    "paths": 5
+  },
+  "layout_id": "svg_data_badge_sheet__retro_newspaper__1280x720__n7_c5_b7_p5",
+  "output_asset_hash": "sha256:dd8e405a501977823e702841b5a1900444b8e7be15e5bb9ebe13da8a027983f9",
+  "output_format": "png",
+  "output_path": "images/sample_000271.png",
+  "parent_asset_hashes": [
+    "sha256:47182758b6e77cef46b84f3abbaa07c3ef9f3cd04d7747b3962ef41b5320a5c8"
+  ],
+  "random_seed": 20260885,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000271",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:47182758b6e77cef46b84f3abbaa07c3ef9f3cd04d7747b3962ef41b5320a5c8",
+  "source_path": "svg/sample_000271.svg",
+  "source_type": "svg",
+  "style_id": "retro_newspaper",
+  "template_family": "svg_data_badge_sheet",
+  "wordlist_version": "local_wordlists_v1"
+}

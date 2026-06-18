@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1754,
+    "width": 1240
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:2bc1abb14ab9ce5c34fb372a6950e1d9ab6fc69facdcb4489f90613407538c0b",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "html_path": "html/sample_000677.html",
+  "html_sha256": "sha256:53d8aaa97f39c3ff9da85beb6297c6c41f71cd2c48043970b814219b873b3fd0",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 3,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "ecommerce_product_card__retro_newspaper__1240x1754__s3_c4_t0_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:11dd1b6a8341ed19a278fcd6854b7990725f6b5ee6a1f4f97c1385740c3c0024",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000677_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:222ad0aee39375f1cf1c1ce424f76f2acd102e4878c5a7d3ace2463b07f3e8f0"
+  ],
+  "parent_sample_id": "sample_000677",
+  "random_seed": 20261291,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000677_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000677.png",
+  "style_id": "retro_newspaper",
+  "template_family": "ecommerce_product_card",
+  "wordlist_version": "local_wordlists_v1"
+}

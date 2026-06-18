@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:8d80b486a6a846599e5557ea183784b3fadca4af8550f6134ddab4615c89df77",
+  "external_assets_used": false,
+  "font_family_id": "verdana",
+  "html_path": "html/sample_000480.html",
+  "html_sha256": "sha256:0d5d6b4feb60a2f0e5eaacd0975fe4f59c9ccf6e8350b1c4e09f1f71110b1c53",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 3,
+    "charts": 1,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "education_slide_lecture_page__mobile_app__1024x1024__s3_c3_t0_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:0e66d5c36fad7e243eec889941af6bb44ffa7ea52ae925c8a0d749bcdd76f3eb",
+  "output_format": "png",
+  "output_path": "images/sample_000480.png",
+  "parent_sample_id": null,
+  "random_seed": 20261094,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000480",
+  "style_id": "mobile_app",
+  "template_family": "education_slide_lecture_page",
+  "wordlist_version": "local_wordlists_v1"
+}

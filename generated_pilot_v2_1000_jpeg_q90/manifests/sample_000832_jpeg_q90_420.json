@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:0e53526e13ac106f8869879d05d565dd5c603cb1d7a9cafa98a0707167052625",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000832.html",
+  "html_sha256": "sha256:c4557fe6d2c3bc26de0ba0509d962f25cce315e6666b9b12a9f19e8fe7121328",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 3,
+    "sections": 3,
+    "tables": 1
+  },
+  "layout_id": "report_academic_abstract__retro_newspaper__1280x720__s3_c4_t1_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:74f9a3e1c3b4b98e4444b4ba5caa52b194cd4dd93e2b36064082b6a0b3f8406a",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000832_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:ef04404b28d40ac9f483950e62fb22efe04cd0f68e3ff6897c213808e8132405"
+  ],
+  "parent_sample_id": "sample_000832",
+  "random_seed": 20261446,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000832_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000832.png",
+  "style_id": "retro_newspaper",
+  "template_family": "report_academic_abstract",
+  "wordlist_version": "local_wordlists_v1"
+}

@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:b33c547e33b5b5d9aead6bfd1040f0e852f02d2478c92c1cb2b40cbca4ae8d54",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000253.html",
+  "html_sha256": "sha256:b588c3980924b928a30b9b9a66a0c08a7e7718bbbc86756fe476dc74f1e25859",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 6,
+    "charts": 2,
+    "sections": 5,
+    "tables": 0
+  },
+  "layout_id": "dashboard_with_charts__mobile_app__1024x1024__s5_c6_t0_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:f2cccb730c4478a2cee021d561be543920aa9b8400bcf5d59a3a2b11bf0a84b8",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000253_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:1117fe7a85399a2be41081939afbc9f9c4a1a6d20347ce93ffbe7904d5473b95"
+  ],
+  "parent_sample_id": "sample_000253",
+  "random_seed": 20260867,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000253_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000253.png",
+  "style_id": "mobile_app",
+  "template_family": "dashboard_with_charts",
+  "wordlist_version": "local_wordlists_v1"
+}

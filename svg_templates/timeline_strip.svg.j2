@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <text x="{{ layout.margin }}" y="{{ layout.margin + 18 }}" class="small">{{ city }} TIMELINE</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 32 }}" class="title">{{ title }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 70 }}" class="subtitle">{{ subtitle }}</text>
+  <line x1="{{ axis.x1 }}" y1="{{ axis.y }}" x2="{{ axis.x2 }}" y2="{{ axis.y }}" class="accent-line"/>
+  {% for item in items %}
+  <circle cx="{{ item.x }}" cy="{{ item.y }}" r="15" fill="{{ palette.panel }}" stroke="{{ palette.accent }}" stroke-width="5"/>
+  {% if item.up %}
+  <line x1="{{ item.x }}" y1="{{ item.y - 15 }}" x2="{{ item.x }}" y2="{{ item.y - 105 }}" class="line"/>
+  <rect x="{{ item.x - 92 }}" y="{{ item.y - 205 }}" width="184" height="96" rx="12" class="panel"/>
+  <text x="{{ item.x - 74 }}" y="{{ item.y - 175 }}" class="small">{{ item.month }}</text>
+  <text x="{{ item.x - 74 }}" y="{{ item.y - 145 }}" class="body" font-weight="800">{{ item.title }}</text>
+  <text x="{{ item.x - 74 }}" y="{{ item.y - 118 }}" class="muted">{{ item.text }}</text>
+  {% else %}
+  <line x1="{{ item.x }}" y1="{{ item.y + 15 }}" x2="{{ item.x }}" y2="{{ item.y + 105 }}" class="line"/>
+  <rect x="{{ item.x - 92 }}" y="{{ item.y + 112 }}" width="184" height="96" rx="12" class="panel"/>
+  <text x="{{ item.x - 74 }}" y="{{ item.y + 142 }}" class="small">{{ item.month }}</text>
+  <text x="{{ item.x - 74 }}" y="{{ item.y + 172 }}" class="body" font-weight="800">{{ item.title }}</text>
+  <text x="{{ item.x - 74 }}" y="{{ item.y + 199 }}" class="muted">{{ item.text }}</text>
+  {% endif %}
+  {% endfor %}
+  <text x="{{ layout.margin }}" y="{{ canvas.height - layout.margin }}" class="muted">{{ org }} / {{ code }}</text>
+</svg>

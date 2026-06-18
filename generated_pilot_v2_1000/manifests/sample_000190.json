@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:376becc5c8a20fded99b70f861295e7d87ddc64ed529ed763670606f8ee08777",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "html_path": "html/sample_000190.html",
+  "html_sha256": "sha256:3015318f9c7c5a5b2cba2eaa4996755275470cbf5e3bf623da6e020f10ae52bc",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 3,
+    "charts": 1,
+    "sections": 4,
+    "tables": 0
+  },
+  "layout_id": "education_slide_lecture_page__government_form__1280x720__s4_c3_t0_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:ea9c7bd07e3fe8e46308bbbcb54fb87aa64957f309adfa15deeb877141acfffd",
+  "output_format": "png",
+  "output_path": "images/sample_000190.png",
+  "parent_sample_id": null,
+  "random_seed": 20260804,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000190",
+  "style_id": "government_form",
+  "template_family": "education_slide_lecture_page",
+  "wordlist_version": "local_wordlists_v1"
+}

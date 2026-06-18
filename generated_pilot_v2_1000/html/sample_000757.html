@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Data Notebook</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --panel: #ffffff;
+    --ink: #172033;
+    --muted: #647084;
+    --accent: #2f5f8f;
+    --accent2: #8fb3d9;
+    --line: #dce3ec;
+    --radius: 6px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1240px;
+    height: 1754px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1240px;
+    height: 1754px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 52px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-minimal_white">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Horizon Market Unit / Product Sheet</div>
+      <span class="pill">4.7 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#dce3ec" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#2f5f8f"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#8fb3d9"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Training</div>
+          <h1>Data Notebook</h1>
+          <p class="muted">Survey panel prepares data notebook Research Public Programs route planner measured.</p>
+        </div>
+        <div class="price">$55.63</div>
+        <div class="feature-grid">
+          <div class="feature">Field kit tracker inventory review Facilities measures.</div>
+          <div class="feature">Quality Review field kit survey panel report bundle balanced quarterly Finance.</div>
+          <div class="feature">Prepares data notebook training schedule guide focused summarizes route planner publishes.</div>
+          <div class="feature">Organizes overview baseline summary improves service quality packet.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Field Kit</th>
+            <td>Logistics</td>
+            <td>Monitoring</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <th>Maintenance Set</th>
+            <td>Data Services</td>
+            <td>Validated</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <th>Route Planner</th>
+            <td>Public Programs</td>
+            <td>Monitoring</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <th>Service Desk</th>
+            <td>Public Programs</td>
+            <td>Monitoring</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Training</td>
+            <td>Draft</td>
+            <td>47</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>MZU-5692-72</span><span>Stonebridge</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:7b4a3ba755078a7a0e564a4ae2b26d18fb634dcde111644d0cc4d52593d5eddb",
+  "external_assets_used": false,
+  "font_family_id": "verdana",
+  "html_path": "html/sample_000136.html",
+  "html_sha256": "sha256:5c13e4415e7015c5b9dfe0f3d92d153f0138b8083c6385c681f9cd63dca6a31d",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 0,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "news_article_page__government_form__720x1280__s3_c4_t0_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:06275eaab0d091e69e497a284f138dec71d08a60365cb6471072ea03e0fb8a8a",
+  "output_format": "png",
+  "output_path": "images/sample_000136.png",
+  "parent_sample_id": null,
+  "random_seed": 20260750,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000136",
+  "style_id": "government_form",
+  "template_family": "news_article_page",
+  "wordlist_version": "local_wordlists_v1"
+}

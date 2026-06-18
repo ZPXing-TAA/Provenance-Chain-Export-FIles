@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Focused Workspace Utilization</title>
+<style>
+  :root {
+    --bg: #fbf8ef;
+    --panel: #ffffff;
+    --ink: #2d2618;
+    --muted: #7c6f58;
+    --accent: #b98219;
+    --accent2: #e1bd67;
+    --line: #e9dec8;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .page {
+    width: 1080px;
+    height: 1350px;
+    padding: 34px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+</style>  <style>
+    .page {
+      padding: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      background: #b98219;
+    }
+    .poster {
+      margin: 34px;
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 42px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 28px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 74px;
+      line-height: 0.98;
+      letter-spacing: 0;
+      max-width: 820px;
+    }
+    .tagline {
+      margin-top: 18px;
+      font-size: 25px;
+      line-height: 1.3;
+      color: var(--muted);
+      max-width: 760px;
+    }
+    .middle {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .date {
+      background: var(--ink);
+      color: white;
+      border-radius: 8px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .date .day {
+      font-size: 96px;
+      line-height: 0.9;
+      font-weight: 900;
+    }
+    .date .month {
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .details {
+      display: grid;
+      gap: 14px;
+    }
+    .detail {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      font-size: 20px;
+    }
+    .chart-panel {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+    }
+    .footer {
+      padding: 0 34px 34px;
+      color: rgba(255, 255, 255, 0.88);
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="poster">
+      <header>
+        <div class="smallcaps">Urban Systems Lab</div>
+        <h1>Focused Workspace Utilization</h1>
+        <div class="tagline">Aligns packet practical focused workspace utilization survey panel internal energy usage annual Finance measured guide.</div>
+      </header>
+      <section class="middle">
+        <div class="date">
+          <div>
+            <div class="day">3</div>
+            <div class="month">May</div>
+          </div>
+          <div>Cedar Falls / Quality Review</div>
+        </div>
+        <div class="details">
+          <div class="detail">Data Services: Validated</div>
+          <div class="detail">Route Planner review window</div>
+          <div class="detail">Packet updates updated reviews maintenance set field kit.</div>
+        </div>
+      </section>
+      <section class="chart-panel">
+        <div class="smallcaps">Throughput Mix</div>
+        <div class="chart"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="345.6pt" height="158.4pt" viewBox="0 0 345.6 158.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 158.4 
+L 345.6 158.4 
+L 345.6 0 
+L 0 0 
+L 0 158.4 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 172.8 18.24 
+C 162.73883 18.24 152.832417 20.730826 143.967737 25.489459 
+C 135.103056 30.248093 127.552816 37.128144 121.99303 45.513603 
+C 116.433243 53.899062 113.034948 63.531965 112.102413 73.549825 
+C 111.169877 83.567686 112.731789 93.662321 116.648301 102.929903 
+L 140.232015 92.963344 
+C 137.960437 87.588146 137.054529 81.733258 137.595399 75.922899 
+C 138.13627 70.11254 140.107281 64.525456 143.331957 59.66189 
+C 146.556633 54.798323 150.935773 50.807894 156.077287 48.047886 
+C 161.218802 45.287879 166.964521 43.8432 172.8 43.8432 
+z
+" style="fill: #b98219"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 116.6483 102.929903 
+C 121.890433 115.334277 131.098011 125.658734 142.82397 132.280684 
+C 154.549929 138.902635 168.146029 141.456011 181.475525 139.539515 
+L 177.831805 114.196918 
+C 170.100697 115.308486 162.214959 113.827528 155.413903 109.986797 
+C 148.612846 106.146066 143.272451 100.157881 140.232014 92.963344 
+z
+" style="fill: #e1bd67"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 181.475525 139.539515 
+C 194.952471 137.60182 207.399356 131.203737 216.818578 121.372102 
+C 226.237799 111.540468 232.096958 98.830966 233.455698 85.2834 
+C 234.814434 71.735834 231.595957 58.115896 224.316812 46.609518 
+C 217.037667 35.103142 206.109282 26.36066 193.285572 21.785169 
+L 184.681632 45.899398 
+C 192.119384 48.553183 198.457847 53.623822 202.679751 60.297521 
+C 206.901655 66.97122 208.768372 74.870783 207.980305 82.728372 
+C 207.192236 90.58596 203.793924 97.957471 198.330775 103.659819 
+C 192.867627 109.362168 185.648433 113.073056 177.831805 114.196918 
+z
+" style="fill: #9aa6b2"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 193.285572 21.785169 
+C 190.004041 20.614321 186.628162 19.726955 183.195038 19.132831 
+C 179.761913 18.538706 176.284163 18.24 172.800008 18.24 
+L 172.800005 43.8432 
+C 174.820814 43.8432 176.837909 44.01645 178.829122 44.361042 
+C 180.820334 44.705634 182.778344 45.220306 184.681632 45.899398 
+z
+" style="fill: #c8d0d8"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <!-- Coverage -->
+    <g transform="translate(68.998263 44.904349) scale(0.1 -0.1)">
+     <defs>
+      <path id="DejaVuSans-43" d="M 4122 4306 
+L 4122 3641 
+Q 3803 3938 3442 4084 
+Q 3081 4231 2675 4231 
+Q 1875 4231 1450 3742 
+Q 1025 3253 1025 2328 
+Q 1025 1406 1450 917 
+Q 1875 428 2675 428 
+Q 3081 428 3442 575 
+Q 3803 722 4122 1019 
+L 4122 359 
+Q 3791 134 3420 21 
+Q 3050 -91 2638 -91 
+Q 1578 -91 968 557 
+Q 359 1206 359 2328 
+Q 359 3453 968 4101 
+Q 1578 4750 2638 4750 
+Q 3056 4750 3426 4639 
+Q 3797 4528 4122 4306 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-6f" d="M 1959 3097 
+Q 1497 3097 1228 2736 
+Q 959 2375 959 1747 
+Q 959 1119 1226 758 
+Q 1494 397 1959 397 
+Q 2419 397 2687 759 
+Q 2956 1122 2956 1747 
+Q 2956 2369 2687 2733 
+Q 2419 3097 1959 3097 
+z
+M 1959 3584 
+Q 2709 3584 3137 3096 
+Q 3566 2609 3566 1747 
+Q 3566 888 3137 398 
+Q 2709 -91 1959 -91 
+Q 1206 -91 779 398 
+Q 353 888 353 1747 
+Q 353 2609 779 3096 
+Q 1206 3584 1959 3584 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-76" d="M 191 3500 
+L 800 3500 
+L 1894 563 
+L 2988 3500 
+L 3597 3500 
+L 2284 0 
+L 1503 0 
+L 191 3500 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-65" d="M 3597 1894 
+L 3597 1613 
+L 953 1613 
+Q 991 1019 1311 708 
+Q 1631 397 2203 397 
+Q 2534 397 2845 478 
+Q 3156 559 3463 722 
+L 3463 178 
+Q 3153 47 2828 -22 
+Q 2503 -91 2169 -91 
+Q 1331 -91 842 396 
+Q 353 884 353 1716 
+Q 353 2575 817 3079 
+Q 1281 3584 2069 3584 
+Q 2775 3584 3186 3129 
+Q 3597 2675 3597 1894 
+z
+M 3022 2063 
+Q 3016 2534 2758 2815 
+Q 2500 3097 2075 3097 
+Q 1594 3097 1305 2825 
+Q 1016 2553 972 2059 
+L 3022 2063 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-72" d="M 2631 2963 
+Q 2534 3019 2420 3045 
+Q 2306 3072 2169 3072 
+Q 1681 3072 1420 2755 
+Q 1159 2438 1159 1844 
+L 1159 0 
+L 581 0 
+L 581 3500 
+L 1159 3500 
+L 1159 2956 
+Q 1341 3275 1631 3429 
+Q 1922 3584 2338 3584 
+Q 2397 3584 2469 3576 
+Q 2541 3569 2628 3553 
+L 2631 2963 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-61" d="M 2194 1759 
+Q 1497 1759 1228 1600 
+Q 959 1441 959 1056 
+Q 959 750 1161 570 
+Q 1363 391 1709 391 
+Q 2188 391 2477 730 
+Q 2766 1069 2766 1631 
+L 2766 1759 
+L 2194 1759 
+z
+M 3341 1997 
+L 3341 0 
+L 2766 0 
+L 2766 531 
+Q 2569 213 2275 61 
+Q 1981 -91 1556 -91 
+Q 1019 -91 701 211 
+Q 384 513 384 1019 
+Q 384 1609 779 1909 
+Q 1175 2209 1959 2209 
+L 2766 2209 
+L 2766 2266 
+Q 2766 2663 2505 2880 
+Q 2244 3097 1772 3097 
+Q 1472 3097 1187 3025 
+Q 903 2953 641 2809 
+L 641 3341 
+Q 956 3463 1253 3523 
+Q 1550 3584 1831 3584 
+Q 2591 3584 2966 3190 
+Q 3341 2797 3341 1997 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-67" d="M 2906 1791 
+Q 2906 2416 2648 2759 
+Q 2391 3103 1925 3103 
+Q 1463 3103 1205 2759 
+Q 947 2416 947 1791 
+Q 947 1169 1205 825 
+Q 1463 481 1925 481 
+Q 2391 481 2648 825 
+Q 2906 1169 2906 1791 
+z
+M 3481 434 
+Q 3481 -459 3084 -895 
+Q 2688 -1331 1869 -1331 
+Q 1566 -1331 1297 -1286 
+Q 1028 -1241 775 -1147 
+L 775 -588 
+Q 1028 -725 1275 -790 
+Q 1522 -856 1778 -856 
+Q 2344 -856 2625 -561 
+Q 2906 -266 2906 331 
+L 2906 616 
+Q 2728 306 2450 153 
+Q 2172 0 1784 0 
+Q 1141 0 747 490 
+Q 353 981 353 1791 
+Q 353 2603 747 3093 
+Q 1141 3584 1784 3584 
+Q 2172 3584 2450 3431 
+Q 2728 3278 2906 2969 
+L 2906 3500 
+L 3481 3500 
+L 3481 434 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#DejaVuSans-43"/>
+     <use xlink:href="#DejaVuSans-6f" transform="translate(69.824219 0)"/>
+     <use xlink:href="#DejaVuSans-76" transform="translate(131.005859 0)"/>
+     <use xlink:href="#DejaVuSans-65" transform="translate(190.185547 0)"/>
+     <use xlink:href="#DejaVuSans-72" transform="translate(251.708984 0)"/>
+     <use xlink:href="#DejaVuSans-61" transform="translate(292.822266 0)"/>
+     <use xlink:href="#DejaVuSans-67" transform="translate(354.101562 0)"/>
+     <use xlink:href="#DejaVuSans-65" transform="translate(417.578125 0)"/>
+    </g>
+   </g>
+   <g id="text_2">
+    <!-- Cost -->
+    <g transform="translate(117.59509 140.348115) scale(0.1 -0.1)">
+     <defs>
+      <path id="DejaVuSans-73" d="M 2834 3397 
+L 2834 2853 
+Q 2591 2978 2328 3040 
+Q 2066 3103 1784 3103 
+Q 1356 3103 1142 2972 
+Q 928 2841 928 2578 
+Q 928 2378 1081 2264 
+Q 1234 2150 1697 2047 
+L 1894 2003 
+Q 2506 1872 2764 1633 
+Q 3022 1394 3022 966 
+Q 3022 478 2636 193 
+Q 2250 -91 1575 -91 
+Q 1294 -91 989 -36 
+Q 684 19 347 128 
+L 347 722 
+Q 666 556 975 473 
+Q 1284 391 1588 391 
+Q 1994 391 2212 530 
+Q 2431 669 2431 922 
+Q 2431 1156 2273 1281 
+Q 2116 1406 1581 1522 
+L 1381 1569 
+Q 847 1681 609 1914 
+Q 372 2147 372 2553 
+Q 372 3047 722 3315 
+Q 1072 3584 1716 3584 
+Q 2034 3584 2315 3537 
+Q 2597 3491 2834 3397 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-74" d="M 1172 4494 
+L 1172 3500 
+L 2356 3500 
+L 2356 3053 
+L 1172 3053 
+L 1172 1153 
+Q 1172 725 1289 603 
+Q 1406 481 1766 481 
+L 2356 481 
+L 2356 0 
+L 1766 0 
+Q 1100 0 847 248 
+Q 594 497 594 1153 
+L 594 3053 
+L 172 3053 
+L 172 3500 
+L 594 3500 
+L 594 4494 
+L 1172 4494 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#DejaVuSans-43"/>
+     <use xlink:href="#DejaVuSans-6f" transform="translate(69.824219 0)"/>
+     <use xlink:href="#DejaVuSans-73" transform="translate(131.005859 0)"/>
+     <use xlink:href="#DejaVuSans-74" transform="translate(183.105469 0)"/>
+    </g>
+   </g>
+   <g id="text_3">
+    <!-- Capacity -->
+    <g transform="translate(239.521269 88.651114) scale(0.1 -0.1)">
+     <defs>
+      <path id="DejaVuSans-70" d="M 1159 525 
+L 1159 -1331 
+L 581 -1331 
+L 581 3500 
+L 1159 3500 
+L 1159 2969 
+Q 1341 3281 1617 3432 
+Q 1894 3584 2278 3584 
+Q 2916 3584 3314 3078 
+Q 3713 2572 3713 1747 
+Q 3713 922 3314 415 
+Q 2916 -91 2278 -91 
+Q 1894 -91 1617 61 
+Q 1341 213 1159 525 
+z
+M 3116 1747 
+Q 3116 2381 2855 2742 
+Q 2594 3103 2138 3103 
+Q 1681 3103 1420 2742 
+Q 1159 2381 1159 1747 
+Q 1159 1113 1420 752 
+Q 1681 391 2138 391 
+Q 2594 391 2855 752 
+Q 3116 1113 3116 1747 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-63" d="M 3122 3366 
+L 3122 2828 
+Q 2878 2963 2633 3030 
+Q 2388 3097 2138 3097 
+Q 1578 3097 1268 2742 
+Q 959 2388 959 1747 
+Q 959 1106 1268 751 
+Q 1578 397 2138 397 
+Q 2388 397 2633 464 
+Q 2878 531 3122 666 
+L 3122 134 
+Q 2881 22 2623 -34 
+Q 2366 -91 2075 -91 
+Q 1284 -91 818 406 
+Q 353 903 353 1747 
+Q 353 2603 823 3093 
+Q 1294 3584 2113 3584 
+Q 2378 3584 2631 3529 
+Q 2884 3475 3122 3366 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-69" d="M 603 3500 
+L 1178 3500 
+L 1178 0 
+L 603 0 
+L 603 3500 
+z
+M 603 4863 
+L 1178 4863 
+L 1178 4134 
+L 603 4134 
+L 603 4863 
+z
+" transform="scale(0.015625)"/>
+      <path id="DejaVuSans-79" d="M 2059 -325 
+Q 1816 -950 1584 -1140 
+Q 1353 -1331 966 -1331 
+L 506 -1331 
+L 506 -850 
+L 844 -850 
+Q 1081 -850 1212 -737 
+Q 1344 -625 1503 -206 
+L 1606 56 
+L 191 3500 
+L 800 3500 
+L 1894 763 
+L 2988 3500 
+L 3597 3500 
+L 2059 -325 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#DejaVuSans-43"/>
+     <use xlink:href="#DejaVuSans-61" transform="translate(69.824219 0)"/>
+     <use xlink:href="#DejaVuSans-70" transform="translate(131.103516 0)"/>
+     <use xlink:href="#DejaVuSans-61" transform="translate(194.580078 0)"/>
+     <use xlink:href="#DejaVuSans-63" transform="translate(255.859375 0)"/>
+     <use xlink:href="#DejaVuSans-69" transform="translate(310.839844 0)"/>
+     <use xlink:href="#DejaVuSans-74" transform="translate(338.623047 0)"/>
+     <use xlink:href="#DejaVuSans-79" transform="translate(377.832031 0)"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- Coverage -->
+    <g transform="translate(184.23451 15.885484) scale(0.1 -0.1)">
+     <use xlink:href="#DejaVuSans-43"/>
+     <use xlink:href="#DejaVuSans-6f" transform="translate(69.824219 0)"/>
+     <use xlink:href="#DejaVuSans-76" transform="translate(131.005859 0)"/>
+     <use xlink:href="#DejaVuSans-65" transform="translate(190.185547 0)"/>
+     <use xlink:href="#DejaVuSans-72" transform="translate(251.708984 0)"/>
+     <use xlink:href="#DejaVuSans-61" transform="translate(292.822266 0)"/>
+     <use xlink:href="#DejaVuSans-67" transform="translate(354.101562 0)"/>
+     <use xlink:href="#DejaVuSans-65" transform="translate(417.578125 0)"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
+</div>
+      </section>
+    </section>
+    <footer class="footer">
+      <span>PPW-9640-84</span>
+      <span>Local digital export source</span>
+    </footer>
+  </main>
+</body>
+</html>

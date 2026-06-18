@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:22174ef571ba9a4a079b4b6862125fce41d430fd98194b682d57ee4eaebdf636",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 5,
+    "cards": 4,
+    "nodes": 5,
+    "paths": 2
+  },
+  "layout_id": "svg_data_badge_sheet__government_form__1024x1024__n5_c4_b5_p2",
+  "output_asset_hash": "sha256:706418b5ae28a4db9613526b45064b3942cdd6a63552efbda67728c7c7415acd",
+  "output_format": "png",
+  "output_path": "images/sample_000607.png",
+  "parent_asset_hashes": [
+    "sha256:9de4715bcb7456bbacbd001e3de1db13d92bda4ca34eae570e62ab0dba34b841"
+  ],
+  "random_seed": 20261221,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000607",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:9de4715bcb7456bbacbd001e3de1db13d92bda4ca34eae570e62ab0dba34b841",
+  "source_path": "svg/sample_000607.svg",
+  "source_type": "svg",
+  "style_id": "government_form",
+  "template_family": "svg_data_badge_sheet",
+  "wordlist_version": "local_wordlists_v1"
+}

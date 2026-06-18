@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Regional Demand Thread</title>
+<style>
+  :root {
+    --bg: #eef3f8;
+    --panel: #ffffff;
+    --ink: #152337;
+    --muted: #5f6f83;
+    --accent: #244f78;
+    --accent2: #718faa;
+    --line: #d2dce7;
+    --radius: 8px;
+    --shadow: 0 10px 28px rgba(28, 45, 70, 0.10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1280px;
+    height: 720px;
+    padding: 24px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 48px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-corporate_blue_gray">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Regional Demand Thread</strong><br>
+          <span class="muted">Lumen Ridge Center / Cedar Falls</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Quality Review</strong><br>
+            Briefing service quality service desk aligns compact service desk.<br>
+            <span style="opacity: .68;">84:45</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Baseline data notebook Field Support summary improves program resource card forward.<br>
+            <span style="opacity: .68;">24:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Training energy usage Logistics planning guide measures Operations focused route planner.<br>
+            <span style="opacity: .68;">45:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Route planner Research quarterly Training memo measured balanced.<br>
+            <span style="opacity: .68;">63:56</span>
+          </div>
+          <div class="bubble right">
+            <strong>Data Services</strong><br>
+            Regional safety packet compact training module Planning summarizes report training module route planner.<br>
+            <span style="opacity: .68;">24:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Resource allocation memo baseline Logistics updated service desk report bundle aligns.<br>
+            <span style="opacity: .68;">24:84</span>
+          </div>
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Public feedback index sensor pack education access transport capacity training module service desk planning guide expands facility maintenance.<br>
+            <span style="opacity: .68;">24:72</span>
+          </div>
+          <div class="bubble right">
+            <strong>Facilities</strong><br>
+            Procurement overview packet workspace utilization facility maintenance focused.<br>
+            <span style="opacity: .68;">56:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Field Support</strong><br>
+            Balanced summarizes inventory review focused resource card facility maintenance resource card.<br>
+            <span style="opacity: .68;">12:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Public feedback energy usage memo publishes coordinates sensor pack public Procurement roadmap.<br>
+            <span style="opacity: .68;">31:56</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Lumen Ridge Center</div>
+        <h1>Regional Demand Thread</h1>
+        <p class="muted">Lumen Ridge Center / Cedar Falls</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Accuracy</div>
+          <div class="value">341</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Satisfaction</div>
+          <div class="value">341</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Availability</div>
+          <div class="value">183</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#d2dce7" opacity="0.35"/><rect x="12" y="12" width="48" height="48" rx="8" fill="#244f78"/><path d="M22 45 L36 24 L52 45 Z" fill="#718faa"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

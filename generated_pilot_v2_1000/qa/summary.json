@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_sizes": {
+    "1024x1024": 251,
+    "1240x1754": 224,
+    "1280x720": 243,
+    "720x1280": 282
+  },
+  "external_assets_used": false,
+  "jpeg_variant_count": 0,
+  "missing_images": [],
+  "png_count": 1000,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_count": 1000,
+  "styles": {
+    "academic_paper": 115,
+    "bold_poster": 124,
+    "corporate_blue_gray": 132,
+    "dark_dashboard": 122,
+    "government_form": 137,
+    "minimal_white": 122,
+    "mobile_app": 127,
+    "retro_newspaper": 121
+  },
+  "templates": {
+    "announcement_notice": 100,
+    "dashboard_with_charts": 100,
+    "ecommerce_product_card": 100,
+    "education_slide_lecture_page": 100,
+    "infographic_timeline_flowchart": 100,
+    "mobile_chat_social_card": 100,
+    "news_article_page": 100,
+    "poster_event_card": 100,
+    "report_academic_abstract": 100,
+    "table_form_menu": 100
+  }
+}

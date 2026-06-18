@@ -1,0 +1,70 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1754,
+    "width": 1240
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:2b8dcc3069db53ef245ce512d54f5ace7f5534f8333a99d61a8008da0027d329",
+  "external_assets_used": false,
+  "font_family_id": "times",
+  "html_path": null,
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 5,
+    "cards": 7,
+    "nodes": 6,
+    "paths": 3
+  },
+  "layout_id": "svg_infographic_card__retro_newspaper__1240x1754__n6_c7_b5_p3",
+  "output_asset_hash": "sha256:6a66af5ee0adf5b5ec1efb9549467300f1414f124950126b1c555bb78bde5f2d",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000001_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:a700581e0f2ac0d5c9d20fab6ef1f69b2d2ade656e246d0dba22a6ab50d9c73d"
+  ],
+  "parent_sample_id": "sample_000001",
+  "random_seed": 20260615,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000001_jpeg_q90_420",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:6f66dd58bbabcf5c8c7a9587862e9f25ac157e59c89eb8fbd1782223378ddf4c",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_svg_v1_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000001.png",
+  "source_path": "svg/sample_000001.svg",
+  "source_type": "svg",
+  "style_id": "retro_newspaper",
+  "template_family": "svg_infographic_card",
+  "wordlist_version": "local_wordlists_v1"
+}

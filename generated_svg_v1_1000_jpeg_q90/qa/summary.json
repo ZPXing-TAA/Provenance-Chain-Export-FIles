@@ -1,0 +1,30 @@
+{
+  "ai_inference_used": false,
+  "appended_chain_event": "digital_recompression",
+  "external_assets_used": false,
+  "initial_digital_event": "digital_to_digital_file_export",
+  "output_format": "jpeg",
+  "quality": 90,
+  "sample_count": 1000,
+  "styles": {
+    "academic_paper": 115,
+    "bold_poster": 124,
+    "corporate_blue_gray": 132,
+    "dark_dashboard": 122,
+    "government_form": 137,
+    "minimal_white": 122,
+    "mobile_app": 127,
+    "retro_newspaper": 121
+  },
+  "subsampling": "4:2:0",
+  "templates": {
+    "svg_chart_poster": 125,
+    "svg_data_badge_sheet": 125,
+    "svg_flowchart_diagram": 125,
+    "svg_geometric_notice": 125,
+    "svg_infographic_card": 125,
+    "svg_process_map": 125,
+    "svg_route_or_network_map": 125,
+    "svg_timeline_strip": 125
+  }
+}

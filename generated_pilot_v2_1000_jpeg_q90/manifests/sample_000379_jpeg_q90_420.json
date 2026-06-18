@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:c24737972739eff30712f6039a0fd0bc16835159c3e3af9a5e5e55e49800b6ee",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000379.html",
+  "html_sha256": "sha256:53ef9aae8b8db45eb26071e1d2072a68e5f880bad6e4b21b831220fca90a958f",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 1,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "infographic_timeline_flowchart__retro_newspaper__720x1280__s3_c4_t0_ch1",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:6696aaa56056b56d1e2512b77e87866772c690c5d6cf03283905c43b4f08b41c",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000379_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:7a2a4d2cafba41596b0098f7f6eca834eb0faa91e8c753a708ae3d2b2b94fb6f"
+  ],
+  "parent_sample_id": "sample_000379",
+  "random_seed": 20260993,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000379_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000379.png",
+  "style_id": "retro_newspaper",
+  "template_family": "infographic_timeline_flowchart",
+  "wordlist_version": "local_wordlists_v1"
+}

@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:cfe41bb4d54c3f5f8dd64114958a8826f0beb92ff85e0a1725f35a54ce0e34a1",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": "html/sample_000962.html",
+  "html_sha256": "sha256:3d8c573a5e20846b2881145ad65280a9163dd59a4014e4d46c2a41dddf44f06e",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 5,
+    "charts": 2,
+    "sections": 5,
+    "tables": 0
+  },
+  "layout_id": "report_academic_abstract__government_form__720x1280__s5_c5_t0_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:8520ab6b077f6f50c81f21890903cbfac99331ea2ea55ddf8979d5c3e1cbee94",
+  "output_format": "png",
+  "output_path": "images/sample_000962.png",
+  "parent_sample_id": null,
+  "random_seed": 20261576,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000962",
+  "style_id": "government_form",
+  "template_family": "report_academic_abstract",
+  "wordlist_version": "local_wordlists_v1"
+}

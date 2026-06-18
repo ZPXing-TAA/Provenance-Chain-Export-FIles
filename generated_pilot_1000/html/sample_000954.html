@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Measured Summary Register</title>
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --panel: #ffffff;
+    --ink: #18212f;
+    --muted: #637083;
+    --accent: #315c96;
+    --accent2: #7c9cc7;
+    --line: #d9e0ea;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .page {
+    width: 1080px;
+    height: 1350px;
+    padding: 34px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 82px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Facilities</div>
+        <h1>Measured Summary Register</h1>
+      </div>
+      <div class="meta">
+        <div>Cedar Field Office</div>
+        <div>October 9, 2025</div>
+        <div>WCU-9184-45</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Program roadmap training schedule internal facility maintenance workspace utilization safety packet workspace utilization Operations schedule Logistics baseline. Quarterly improves report bundle prepares priority community planning delivery routing transport capacity tracker Quality Review annual resource allocation.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Facilities</td>
+            <td>Complete</td>
+            <td>55</td>
+            <td>Mar 28</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Logistics</td>
+            <td>Review</td>
+            <td>96</td>
+            <td>Feb 15</td>
+          </tr>
+          <tr>
+            <td>Field Kit</td>
+            <td>Research</td>
+            <td>Monitoring</td>
+            <td>86</td>
+            <td>Jun 3</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Public Programs</td>
+            <td>Scheduled</td>
+            <td>40</td>
+            <td>Apr 22</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Operations</td>
+            <td>Complete</td>
+            <td>78</td>
+            <td>Sep 20</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Finance</td>
+            <td>Review</td>
+            <td>52</td>
+            <td>Jan 18</td>
+          </tr>
+          <tr>
+            <td>Service Desk</td>
+            <td>Procurement</td>
+            <td>Validated</td>
+            <td>86</td>
+            <td>Mar 26</td>
+          </tr>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Training</td>
+            <td>Validated</td>
+            <td>96</td>
+            <td>Jan 28</td>
+          </tr>
+          <tr>
+            <td>Field Kit</td>
+            <td>Data Services</td>
+            <td>Review</td>
+            <td>59</td>
+            <td>Feb 7</td>
+          </tr>
+          <tr>
+            <td>Planning Guide</td>
+            <td>Facilities</td>
+            <td>Ready</td>
+            <td>52</td>
+            <td>Oct 24</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Research</td>
+            <td>Monitoring</td>
+            <td>47</td>
+            <td>Jan 7</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Training</td>
+            <td>Complete</td>
+            <td>78</td>
+            <td>Jan 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Community Planning</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

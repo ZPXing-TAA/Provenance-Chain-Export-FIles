@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Focused Briefing Register</title>
+<style>
+  :root {
+    --bg: #eef3f8;
+    --panel: #ffffff;
+    --ink: #152337;
+    --muted: #5f6f83;
+    --accent: #244f78;
+    --accent2: #718faa;
+    --line: #d2dce7;
+    --radius: 8px;
+    --shadow: 0 10px 28px rgba(28, 45, 70, 0.10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 60px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Training</div>
+        <h1>Focused Briefing Register</h1>
+      </div>
+      <div class="meta">
+        <div>Northline Studio</div>
+        <div>July 16, 2025</div>
+        <div>PEC-1380-12</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Expands Operations Research Field Support compact annual safety packet Public Programs. Report bundle Field Support improves sensor pack packet audits guide Procurement sensor pack.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Planning Guide</td>
+            <td>Field Support</td>
+            <td>Review</td>
+            <td>47</td>
+            <td>Mar 26</td>
+          </tr>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Quality Review</td>
+            <td>Validated</td>
+            <td>90</td>
+            <td>Jun 5</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Operations</td>
+            <td>On Track</td>
+            <td>82</td>
+            <td>Jan 16</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Operations</td>
+            <td>Delayed</td>
+            <td>74</td>
+            <td>Aug 21</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Finance</td>
+            <td>Review</td>
+            <td>59</td>
+            <td>Feb 5</td>
+          </tr>
+          <tr>
+            <td>Service Desk</td>
+            <td>Finance</td>
+            <td>Delayed</td>
+            <td>40</td>
+            <td>May 2</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Quality Review</td>
+            <td>Review</td>
+            <td>71</td>
+            <td>Aug 24</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Research</td>
+            <td>Scheduled</td>
+            <td>40</td>
+            <td>Aug 6</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Procurement</td>
+            <td>On Track</td>
+            <td>74</td>
+            <td>Feb 8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Public Feedback</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Training Module</title>
+<style>
+  :root {
+    --bg: #eef1f3;
+    --panel: #ffffff;
+    --ink: #17202a;
+    --muted: #596677;
+    --accent: #2c5279;
+    --accent2: #8c9cad;
+    --line: #bfc9d4;
+    --radius: 3px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 720px;
+    height: 1280px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 720px;
+    height: 1280px;
+    padding: 32px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 40px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-government_form">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Clearwater Planning / Product Sheet</div>
+      <span class="pill">4.9 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#bfc9d4" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#2c5279"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#8c9cad"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Procurement</div>
+          <h1>Training Module</h1>
+          <p class="muted">Planning summarizes transport capacity sensor pack survey panel guide Procurement maintenance set publishes community planning.</p>
+        </div>
+        <div class="price">$55.56</div>
+        <div class="feature-grid">
+          <div class="feature">Survey panel training schedule service quality regional demand Quality Review Research baseline.</div>
+          <div class="feature">Improves Operations Finance baseline summarizes report bundle.</div>
+          <div class="feature">Field kit forward maintenance set Procurement inventory review overview packet measured.</div>
+          <div class="feature">Planning guide field kit Data Services notice data notebook.</div>
+          <div class="feature">Coordinates Logistics Finance Facilities workspace utilization route planner.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Survey Panel</th>
+            <td>Planning</td>
+            <td>Monitoring</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <th>Safety Packet</th>
+            <td>Data Services</td>
+            <td>Validated</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <th>Survey Panel</th>
+            <td>Finance</td>
+            <td>Scheduled</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Planning</td>
+            <td>Queued</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <th>Report Bundle</th>
+            <td>Logistics</td>
+            <td>Review</td>
+            <td>74</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>REM-1380-12</span><span>Maple Junction</span></footer>
+  </main>
+</body>
+</html>

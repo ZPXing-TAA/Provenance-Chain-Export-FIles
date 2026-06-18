@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:cfb62e6f084ccd11967dfd0dc0ed608718cb782b1d1bbe7ff7c4db558de654af",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": "html/sample_000017.html",
+  "html_sha256": "sha256:4404a0758b8f26b8e1c273089b4537a32afb79f30b6dc3d0c72fcb945cd47eed",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 3,
+    "sections": 5,
+    "tables": 1
+  },
+  "layout_id": "ecommerce_product_card__bold_poster__720x1280__s5_c3_t1_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:61f3cc3ab055704b9fa4f7df318c4dda90ed978ac54b344412be61a8660532bb",
+  "output_format": "png",
+  "output_path": "images/sample_000017.png",
+  "parent_sample_id": null,
+  "random_seed": 20260631,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000017",
+  "style_id": "bold_poster",
+  "template_family": "ecommerce_product_card",
+  "wordlist_version": "local_wordlists_v1"
+}

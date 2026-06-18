@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Report Bundle</title>
+<style>
+  :root {
+    --bg: #eef3f8;
+    --panel: #ffffff;
+    --ink: #152337;
+    --muted: #5f6f83;
+    --accent: #244f78;
+    --accent2: #718faa;
+    --line: #d2dce7;
+    --radius: 8px;
+    --shadow: 0 10px 28px rgba(28, 45, 70, 0.10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1280px;
+    height: 720px;
+    padding: 24px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 45px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-corporate_blue_gray">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Lumen Ridge Center / Product Sheet</div>
+      <span class="pill">4.3 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="12" fill="#d2dce7" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#244f78"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#718faa"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Data Services</div>
+          <h1>Report Bundle</h1>
+          <p class="muted">Reviews supports summarizes community planning Facilities measured tracker resource allocation index seasonal operations.</p>
+        </div>
+        <div class="price">$74.97</div>
+        <div class="feature-grid">
+          <div class="feature">Updated index updated safety packet Data Services public.</div>
+          <div class="feature">Measures workspace utilization route planner review quarterly.</div>
+          <div class="feature">Coordinates resource card service desk practical quarterly regional.</div>
+          <div class="feature">Logistics baseline Operations report bundle Operations transport capacity workspace utilization.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Service Desk</th>
+            <td>Public Programs</td>
+            <td>Review</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Public Programs</td>
+            <td>Delayed</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <th>Sensor Pack</th>
+            <td>Public Programs</td>
+            <td>Queued</td>
+            <td>96</td>
+          </tr>
+          <tr>
+            <th>Report Bundle</th>
+            <td>Training</td>
+            <td>Draft</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <th>Training Module</th>
+            <td>Public Programs</td>
+            <td>Validated</td>
+            <td>99</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>VVT-5692-24</span><span>Brookside</span></footer>
+  </main>
+</body>
+</html>

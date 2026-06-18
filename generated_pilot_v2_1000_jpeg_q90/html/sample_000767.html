@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sensor Pack</title>
+<style>
+  :root {
+    --bg: #0d1424;
+    --panel: #151f33;
+    --ink: #eef4ff;
+    --muted: #99aac3;
+    --accent: #6db7ff;
+    --accent2: #60d0a8;
+    --line: #293850;
+    --radius: 8px;
+    --shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 720px;
+    height: 1280px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.28;
+  }
+  .page {
+    width: 720px;
+    height: 1280px;
+    padding: 36px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 46px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-dark_dashboard">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Bright Parcel Works / Product Sheet</div>
+      <span class="pill">4.3 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#293850" opacity="0.35"/><rect x="12" y="12" width="48" height="48" rx="8" fill="#6db7ff"/><path d="M22 45 L36 24 L52 45 Z" fill="#60d0a8"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Logistics</div>
+          <h1>Sensor Pack</h1>
+          <p class="muted">Priority Finance Planning roadmap supports review seasonal operations packet.</p>
+        </div>
+        <div class="price">$82.72</div>
+        <div class="feature-grid">
+          <div class="feature">Baseline quarterly Procurement seasonal operations field kit Public Programs public updated.</div>
+          <div class="feature">Field Support priority annual index coordinates public maintenance set.</div>
+          <div class="feature">Regional resource card Procurement Logistics measured forward expands priority.</div>
+          <div class="feature">Safety packet updates index inventory review launches.</div>
+          <div class="feature">Report program packet field kit updated report bundle Facilities measures.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Maintenance Set</th>
+            <td>Field Support</td>
+            <td>Queued</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <th>Safety Packet</th>
+            <td>Data Services</td>
+            <td>Validated</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Finance</td>
+            <td>On Track</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <th>Data Notebook</th>
+            <td>Procurement</td>
+            <td>Queued</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <th>Sensor Pack</th>
+            <td>Operations</td>
+            <td>Review</td>
+            <td>44</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>EXT-9184-84</span><span>Riverton</span></footer>
+  </main>
+</body>
+</html>

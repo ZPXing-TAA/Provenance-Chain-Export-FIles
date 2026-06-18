@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:9be0c251b00205dac2e773255d991cd5b328251c93f2d539c781c3282b466fe5",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 8,
+    "cards": 6,
+    "nodes": 5,
+    "paths": 3
+  },
+  "layout_id": "svg_infographic_card__academic_paper__1280x720__n5_c6_b8_p3",
+  "output_asset_hash": "sha256:141287a3ea70c8a11242143b09c2552e7aa564fb5d145d024a50d2b97be28177",
+  "output_format": "png",
+  "output_path": "images/sample_000649.png",
+  "parent_asset_hashes": [
+    "sha256:b163a78fd225c62c98fbe48f49affdb4edf1c83483ce6d33fc59fccad40705cf"
+  ],
+  "random_seed": 20261263,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000649",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:b163a78fd225c62c98fbe48f49affdb4edf1c83483ce6d33fc59fccad40705cf",
+  "source_path": "svg/sample_000649.svg",
+  "source_type": "svg",
+  "style_id": "academic_paper",
+  "template_family": "svg_infographic_card",
+  "wordlist_version": "local_wordlists_v1"
+}

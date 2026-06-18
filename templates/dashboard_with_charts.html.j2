@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {% include "_common_css.html.j2" %}
+  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      gap: 18px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: {{ typography.title_size }}px;
+      line-height: 1.05;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .metric {
+      padding: 20px;
+    }
+    .metric .value {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--accent);
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-rows: 1fr 0.85fr;
+      gap: 18px;
+      min-height: 0;
+    }
+    .panel {
+      padding: 20px;
+      overflow: hidden;
+    }
+    .wide {
+      grid-row: span 2;
+    }
+    .chart {
+      margin-top: 8px;
+    }
+    .status-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .status-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">{{ org }}</div>
+        <h1>{{ title }}</h1>
+      </div>
+      <span class="pill">{{ month }} {{ year }}</span>
+    </header>
+    <section class="cards">
+      {% for metric in metrics %}
+      <div class="card metric">
+        <div class="smallcaps">{{ metric.label }}</div>
+        <div class="value">{{ metric.value }}</div>
+        <div class="muted">{{ metric.delta }}</div>
+      </div>
+      {% endfor %}
+    </section>
+    <section class="grid">
+      <div class="card panel wide">
+        <div class="smallcaps">{{ primary_chart_title }}</div>
+        <div class="chart">{{ line_chart_svg | safe }}</div>
+      </div>
+      <div class="card panel">
+        <div class="smallcaps">{{ secondary_chart_title }}</div>
+        <div class="chart">{{ bar_chart_svg | safe }}</div>
+      </div>
+      <div class="card panel">
+        <div class="smallcaps">Current Work Queue</div>
+        <div class="status-list">
+          {% for row in status_rows %}
+          <div class="status-row">
+            <span>{{ row.name }}</span>
+            <strong>{{ row.status }}</strong>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

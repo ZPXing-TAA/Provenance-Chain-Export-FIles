@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  {% for shape in shapes %}
+  {% if shape.shape == "circle" %}
+  <circle cx="{{ shape.x + shape.size / 2 }}" cy="{{ shape.y + shape.size / 2 }}" r="{{ shape.size / 2 }}" fill="{% if loop.index is even %}{{ palette.accent2 }}{% else %}{{ palette.accent }}{% endif %}" opacity="0.22"/>
+  {% elif shape.shape == "diamond" %}
+  <rect x="{{ shape.x }}" y="{{ shape.y }}" width="{{ shape.size }}" height="{{ shape.size }}" transform="rotate({{ shape.rotate }} {{ shape.x + shape.size / 2 }} {{ shape.y + shape.size / 2 }})" fill="{{ palette.accent2 }}" opacity="0.24"/>
+  {% else %}
+  <rect x="{{ shape.x }}" y="{{ shape.y }}" width="{{ shape.size }}" height="{{ shape.size }}" rx="10" transform="rotate({{ shape.rotate }} {{ shape.x + shape.size / 2 }} {{ shape.y + shape.size / 2 }})" fill="{{ palette.accent }}" opacity="0.20"/>
+  {% endif %}
+  {% endfor %}
+  <rect x="{{ layout.margin }}" y="{{ canvas.height * 0.22 }}" width="{{ canvas.width - layout.margin * 2 }}" height="{{ canvas.height * 0.54 }}" rx="22" class="panel" filter="url(#soft-shadow)"/>
+  <text x="{{ layout.margin + 42 }}" y="{{ canvas.height * 0.22 + 58 }}" class="small">{{ org }} NOTICE</text>
+  <text x="{{ layout.margin + 42 }}" y="{{ canvas.height * 0.22 + typography.title_size + 94 }}" class="title">{{ title }}</text>
+  {% for line in notice_lines %}
+  <text x="{{ layout.margin + 48 }}" y="{{ canvas.height * 0.22 + typography.title_size + 150 + loop.index0 * 42 }}" class="subtitle">{{ line }}</text>
+  {% endfor %}
+  <text x="{{ layout.margin + 42 }}" y="{{ canvas.height * 0.76 - 38 }}" class="muted">{{ city }} / {{ department }} / {{ code }}</text>
+</svg>

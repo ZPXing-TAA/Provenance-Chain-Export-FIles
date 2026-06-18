@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:76e753e11fe578304b82bf3287f8e46ab8243694f673e93ed2969f06fcc1bc1b",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": "html/sample_000954.html",
+  "html_sha256": "sha256:058313ba9db30dd9681c85709cfba58f232f8807bfb35c59a86ee0d2dd311efa",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 2,
+    "charts": 2,
+    "sections": 4,
+    "tables": 2
+  },
+  "layout_id": "table_form_menu__academic_paper__1024x1024__s4_c2_t2_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:df37a7ca770ee40da9fcc3a8fbf239cb6ecc7a7122a99bdb99b6bfb60657b348",
+  "output_format": "png",
+  "output_path": "images/sample_000954.png",
+  "parent_sample_id": null,
+  "random_seed": 20261568,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000954",
+  "style_id": "academic_paper",
+  "template_family": "table_form_menu",
+  "wordlist_version": "local_wordlists_v1"
+}

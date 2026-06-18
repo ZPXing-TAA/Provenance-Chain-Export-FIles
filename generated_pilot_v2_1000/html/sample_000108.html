@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Facility Maintenance Thread</title>
+<style>
+  :root {
+    --bg: #f8e9d0;
+    --panel: #fffaf0;
+    --ink: #201612;
+    --muted: #725f4a;
+    --accent: #d4472f;
+    --accent2: #ffc857;
+    --line: #ead0a8;
+    --radius: 8px;
+    --shadow: 8px 8px 0 rgba(32, 22, 18, 0.18);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1240px;
+    height: 1754px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.28;
+  }
+  .page {
+    width: 1240px;
+    height: 1754px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 47px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-bold_poster">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Facility Maintenance Thread</strong><br>
+          <span class="muted">Northline Studio / Hillcrest</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Data Services</strong><br>
+            Facilities schedule delivery routing priority Logistics delivery routing coordinates maintenance set.<br>
+            <span style="opacity: .68;">31:56</span>
+          </div>
+          <div class="bubble right">
+            <strong>Research</strong><br>
+            Data notebook tracks organizes snapshot product readiness.<br>
+            <span style="opacity: .68;">12:12</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Safety packet tracks report bundle Field Support improves organizes training schedule tracker.<br>
+            <span style="opacity: .68;">45:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Finance memo Research roadmap roadmap.<br>
+            <span style="opacity: .68;">45:24</span>
+          </div>
+          <div class="bubble right">
+            <strong>Data Services</strong><br>
+            Service desk improves facility maintenance rapid Public Programs memo compact.<br>
+            <span style="opacity: .68;">24:18</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Research planning guide compact Data Services transport capacity aligns data notebook report bundle.<br>
+            <span style="opacity: .68;">24:18</span>
+          </div>
+          <div class="bubble left">
+            <strong>Training</strong><br>
+            Report bundle safety packet guide balanced facility maintenance index summary regional organizes updates.<br>
+            <span style="opacity: .68;">72:18</span>
+          </div>
+          <div class="bubble right">
+            <strong>Facilities</strong><br>
+            Report Quality Review balanced Data Services maintenance set sensor pack.<br>
+            <span style="opacity: .68;">56:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Public Programs</strong><br>
+            Transport capacity sensor pack overview Operations seasonal operations Finance.<br>
+            <span style="opacity: .68;">97:24</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Meridian Civic Lab</div>
+        <h1>Facility Maintenance Thread</h1>
+        <p class="muted">Northline Studio / Hillcrest</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Satisfaction</div>
+          <div class="value">147</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Response Time</div>
+          <div class="value">104</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Accuracy</div>
+          <div class="value">426</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="12" fill="#ead0a8" opacity="0.35"/><rect x="12" y="12" width="48" height="48" rx="8" fill="#d4472f"/><path d="M22 45 L36 24 L52 45 Z" fill="#ffc857"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<style>
+  :root {
+    --bg: {{ palette.bg }};
+    --panel: {{ palette.panel }};
+    --ink: {{ palette.ink }};
+    --muted: {{ palette.muted }};
+    --accent: {{ palette.accent }};
+    --accent2: {{ palette.accent2 }};
+    --line: {{ palette.line }};
+    --radius: {{ palette.radius }}px;
+    --shadow: {{ palette.shadow }};
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: {{ canvas.width }}px;
+    height: {{ canvas.height }}px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: {{ typography.font_family_css }};
+    font-size: {{ typography.body_size }}px;
+    line-height: {{ typography.line_height }};
+  }
+  .page {
+    width: {{ canvas.width }}px;
+    height: {{ canvas.height }}px;
+    padding: {{ layout.margin }}px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>

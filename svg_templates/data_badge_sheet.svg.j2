@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <text x="{{ layout.margin }}" y="{{ layout.margin + 18 }}" class="small">{{ org }} DATA BADGES</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 36 }}" class="title">{{ title }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 76 }}" class="subtitle">{{ subtitle }}</text>
+  {% for badge in badges %}
+  <g filter="url(#soft-shadow)">
+    <rect x="{{ badge.x }}" y="{{ badge.y }}" width="{{ badge.w }}" height="{{ badge.h }}" rx="18" class="panel"/>
+    <text x="{{ badge.x + 22 }}" y="{{ badge.y + 34 }}" class="small">{{ badge.metric }}</text>
+    <text x="{{ badge.x + 22 }}" y="{{ badge.y + 82 }}" font-family="{{ typography.font_family_css }}" font-size="44" font-weight="900" fill="{{ palette.accent }}">{{ badge.value }}</text>
+    <text x="{{ badge.x + 22 }}" y="{{ badge.y + badge.h - 22 }}" class="muted">{{ badge.status }}</text>
+    <circle cx="{{ badge.x + badge.w - 42 }}" cy="{{ badge.y + 42 }}" r="22" fill="{{ palette.accent2 }}" opacity="0.85"/>
+  </g>
+  {% endfor %}
+  <text x="{{ layout.margin }}" y="{{ canvas.height - layout.margin }}" class="muted">{{ month }} {{ day }}, {{ year }} / {{ code }}</text>
+</svg>

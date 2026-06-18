@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Planning Guide</title>
+<style>
+  :root {
+    --bg: #eef7f6;
+    --panel: #ffffff;
+    --ink: #102524;
+    --muted: #637d7a;
+    --accent: #168174;
+    --accent2: #74c9bd;
+    --line: #cfebe7;
+    --radius: 16px;
+    --shadow: 0 12px 30px rgba(15, 84, 77, 0.12);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 56px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 63px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-mobile_app">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Atlas Harbor Group / Product Sheet</div>
+      <span class="pill">4.7 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="12" fill="#cfebe7" opacity="0.35"/><rect x="10" y="36" width="10" height="24" rx="3" fill="#74c9bd"/><rect x="26" y="18" width="10" height="42" rx="3" fill="#168174"/><rect x="42" y="29" width="10" height="31" rx="3" fill="#74c9bd"/><rect x="58" y="10" width="10" height="50" rx="3" fill="#168174"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Planning</div>
+          <h1>Planning Guide</h1>
+          <p class="muted">Summarizes focused field kit regional transport capacity Planning baseline.</p>
+        </div>
+        <div class="price">$99.24</div>
+        <div class="feature-grid">
+          <div class="feature">Index program launches updated training module.</div>
+          <div class="feature">Resource card maintenance set safety packet Planning updates.</div>
+          <div class="feature">Facilities route planner education access safety packet Data Services product readiness Public Programs report.</div>
+          <div class="feature">Education access supports energy usage Quality Review summarizes.</div>
+          <div class="feature">Public Programs reviews schedule updates quarterly supports energy usage.</div>
+          <div class="feature">Education access training module roadmap compact Public Programs.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Planning Guide</th>
+            <td>Data Services</td>
+            <td>On Track</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <th>Sensor Pack</th>
+            <td>Finance</td>
+            <td>On Track</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th>Route Planner</th>
+            <td>Planning</td>
+            <td>Ready</td>
+            <td>86</td>
+          </tr>
+          <tr>
+            <th>Sensor Pack</th>
+            <td>Training</td>
+            <td>Draft</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <th>Report Bundle</th>
+            <td>Data Services</td>
+            <td>Ready</td>
+            <td>96</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>RVL-8429-24</span><span>Pine Harbor</span></footer>
+  </main>
+</body>
+</html>

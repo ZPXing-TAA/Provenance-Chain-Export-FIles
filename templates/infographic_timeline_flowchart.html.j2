@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {% include "_common_css.html.j2" %}
+  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: {{ typography.title_size }}px;
+      line-height: 1;
+    }
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px;
+      align-items: stretch;
+      min-height: 0;
+    }
+    .step {
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .num {
+      font-size: 54px;
+      color: var(--accent);
+      font-weight: 900;
+      line-height: 1;
+    }
+    .step h2 {
+      margin: 12px 0 8px;
+      font-size: 22px;
+    }
+    .chart-panel {
+      padding: 18px 24px;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="{{ body_class }}">
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">{{ department }}</div>
+        <h1>{{ title }}</h1>
+        <p class="muted">{{ subtitle }}</p>
+      </div>
+      {{ icons[0] | safe }}
+    </header>
+    <section class="flow">
+      {% for step in steps %}
+      <div class="card step">
+        {{ step.icon | safe }}
+        <div class="num">{{ step.num }}</div>
+        <h2>{{ step.title }}</h2>
+        <p class="muted">{{ step.text }}</p>
+      </div>
+      {% endfor %}
+    </section>
+    <section class="card chart-panel">
+      {{ chart_svg | safe }}
+    </section>
+    <footer class="footer"><span>{{ org }}</span><span>{{ code }}</span></footer>
+  </main>
+</body>
+</html>

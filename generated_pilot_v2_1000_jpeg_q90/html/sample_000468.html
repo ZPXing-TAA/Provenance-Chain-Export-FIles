@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Education Access Thread</title>
+<style>
+  :root {
+    --bg: #eef3f8;
+    --panel: #ffffff;
+    --ink: #152337;
+    --muted: #5f6f83;
+    --accent: #244f78;
+    --accent2: #718faa;
+    --line: #d2dce7;
+    --radius: 8px;
+    --shadow: 0 10px 28px rgba(28, 45, 70, 0.10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 56px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 71px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-corporate_blue_gray">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Education Access Thread</strong><br>
+          <span class="muted">Harbor Signal Office / Brookside</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Facilities</strong><br>
+            Planning coordinates Research balanced measures Procurement report Training improves.<br>
+            <span style="opacity: .68;">45:31</span>
+          </div>
+          <div class="bubble right">
+            <strong>Quality Review</strong><br>
+            Practical training module summarizes education access Finance.<br>
+            <span style="opacity: .68;">97:12</span>
+          </div>
+          <div class="bubble left">
+            <strong>Public Programs</strong><br>
+            Practical Quality Review aligns transport capacity Research roadmap field kit.<br>
+            <span style="opacity: .68;">12:97</span>
+          </div>
+          <div class="bubble left">
+            <strong>Research</strong><br>
+            Inventory review notice workspace utilization tracker organizes updates service desk inventory review energy usage Data Services.<br>
+            <span style="opacity: .68;">63:72</span>
+          </div>
+          <div class="bubble right">
+            <strong>Planning</strong><br>
+            Measures program prepares Field Support survey panel transport capacity Logistics inventory review service quality regional.<br>
+            <span style="opacity: .68;">45:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Rapid sensor pack packet resource allocation field kit survey panel delivery routing energy usage.<br>
+            <span style="opacity: .68;">12:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Quality Review</strong><br>
+            Prepares guide schedule quarterly Quality Review improves.<br>
+            <span style="opacity: .68;">56:56</span>
+          </div>
+          <div class="bubble right">
+            <strong>Research</strong><br>
+            Resource card training schedule Procurement facility maintenance energy usage inventory review service desk Research.<br>
+            <span style="opacity: .68;">72:97</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Annual memo workspace utilization data notebook updates.<br>
+            <span style="opacity: .68;">45:18</span>
+          </div>
+          <div class="bubble left">
+            <strong>Data Services</strong><br>
+            Tracks Planning maintenance set Facilities Operations baseline overview report bundle Public Programs expands.<br>
+            <span style="opacity: .68;">12:63</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Horizon Market Unit</div>
+        <h1>Education Access Thread</h1>
+        <p class="muted">Harbor Signal Office / Brookside</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Coverage</div>
+          <div class="value">590</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Coverage</div>
+          <div class="value">46</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Retention</div>
+          <div class="value">742</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="12" fill="#d2dce7" opacity="0.35"/><path d="M18 22 L54 24 L42 54 L18 22" fill="none" stroke="#244f78" stroke-width="5"/><circle cx="18" cy="22" r="7" fill="#718faa"/><circle cx="54" cy="24" r="7" fill="#244f78"/><circle cx="42" cy="54" r="7" fill="#718faa"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

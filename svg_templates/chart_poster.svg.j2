@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <rect x="{{ layout.margin }}" y="{{ layout.margin }}" width="{{ canvas.width - layout.margin * 2 }}" height="{{ canvas.height - layout.margin * 2 }}" rx="20" class="panel"/>
+  <text x="{{ layout.margin + 34 }}" y="{{ layout.margin + 56 }}" class="small">{{ department }}</text>
+  <text x="{{ layout.margin + 34 }}" y="{{ layout.margin + typography.title_size + 84 }}" class="title">{{ title }}</text>
+  <text x="{{ layout.margin + 34 }}" y="{{ layout.margin + typography.title_size + 122 }}" class="subtitle">{{ subtitle }}</text>
+  {% for bar in bars %}
+  <rect x="{{ bar.x }}" y="{{ bar.y }}" width="{{ bar.w }}" height="{{ bar.h }}" rx="8" fill="{% if loop.index is even %}{{ palette.accent2 }}{% else %}{{ palette.accent }}{% endif %}"/>
+  <text x="{{ bar.x }}" y="{{ bar.y - 12 }}" class="muted">{{ bar.value }}</text>
+  <text x="{{ bar.x }}" y="{{ bar.y + bar.h + 28 }}" class="muted">{{ bar.label }}</text>
+  {% endfor %}
+  {% for callout in callouts %}
+  <g>
+    <circle cx="{{ canvas.width - layout.margin - 90 }}" cy="{{ layout.margin + 86 + loop.index0 * 92 }}" r="34" fill="url(#grad-main)"/>
+    <text x="{{ canvas.width - layout.margin - 112 }}" y="{{ layout.margin + 94 + loop.index0 * 92 }}" font-family="{{ typography.font_family_css }}" font-size="22" font-weight="900" fill="#ffffff">{{ callout.value }}</text>
+    <text x="{{ canvas.width - layout.margin - 220 }}" y="{{ layout.margin + 94 + loop.index0 * 92 }}" class="muted">{{ callout.label }}</text>
+  </g>
+  {% endfor %}
+  <text x="{{ layout.margin + 34 }}" y="{{ canvas.height - layout.margin - 28 }}" class="muted">{{ city }} / {{ code }}</text>
+</svg>

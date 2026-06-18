@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:4d48ac5ad4d48fac5a7ceb40f3be891a1cf84cb5bf7c410694ca51abe1808861",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000527.html",
+  "html_sha256": "sha256:5ef684a5a80fe7693be92ab7f291c3aaeee20d0267eabd750c0c8c66d68589be",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 6,
+    "charts": 0,
+    "sections": 3,
+    "tables": 2
+  },
+  "layout_id": "ecommerce_product_card__minimal_white__720x1280__s3_c6_t2_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:d043af74cf0a512c12f5b125049a1fbc866a74ed9e014289f74dba0d042c3138",
+  "output_format": "png",
+  "output_path": "images/sample_000527.png",
+  "parent_sample_id": null,
+  "random_seed": 20261141,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000527",
+  "style_id": "minimal_white",
+  "template_family": "ecommerce_product_card",
+  "wordlist_version": "local_wordlists_v1"
+}

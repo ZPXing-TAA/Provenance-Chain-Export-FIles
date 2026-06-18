@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:b0657de309fa34116cf8454798cc4c7a433e4c9005f9f6d9b9439daa5aab72b1",
+  "external_assets_used": false,
+  "font_family_id": "verdana",
+  "html_path": "html/sample_000871.html",
+  "html_sha256": "sha256:252604fdaa6cc270eebd5be24af07e1a122c1c0bda23df3050fd062672105ec5",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 5,
+    "charts": 3,
+    "sections": 3,
+    "tables": 2
+  },
+  "layout_id": "announcement_notice__government_form__1024x1024__s3_c5_t2_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:b27506cc59c7c705245ee26a55e948aeb28111cd715aea2e9dbf209cefed8fc8",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000871_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:0c6f4ed3158607ec5ae837728e2abe83f34c803898431385a6849415c1322d9d"
+  ],
+  "parent_sample_id": "sample_000871",
+  "random_seed": 20261485,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000871_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000871.png",
+  "style_id": "government_form",
+  "template_family": "announcement_notice",
+  "wordlist_version": "local_wordlists_v1"
+}

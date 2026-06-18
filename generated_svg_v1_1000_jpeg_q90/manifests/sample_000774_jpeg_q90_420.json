@@ -1,0 +1,70 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:5d73a4f7b1cb2d5d9d66257f1a230478c135a5ebcf93f6af8de22323f5a83216",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": null,
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 8,
+    "cards": 3,
+    "nodes": 5,
+    "paths": 2
+  },
+  "layout_id": "svg_geometric_notice__academic_paper__1280x720__n5_c3_b8_p2",
+  "output_asset_hash": "sha256:bea2e28c6f789e9f2fc533bed292cb35dbaa6c29aa70d74720ba3dc70462c81b",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000774_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:54303ad8b47b3ec35bf37e10d18e72a9112aea567c92fb4d6fe86f7f5a81ec52"
+  ],
+  "parent_sample_id": "sample_000774",
+  "random_seed": 20261388,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000774_jpeg_q90_420",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:7c505fc3068ab1d90b8ce405992c3dbefcea895da0397b04450626c415f522c3",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_svg_v1_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000774.png",
+  "source_path": "svg/sample_000774.svg",
+  "source_type": "svg",
+  "style_id": "academic_paper",
+  "template_family": "svg_geometric_notice",
+  "wordlist_version": "local_wordlists_v1"
+}

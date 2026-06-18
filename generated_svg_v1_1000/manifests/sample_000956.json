@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:449d0514bc31eb6430ef4877e05673e502d8544c07a536bc00c726f8c14ebfb7",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 5,
+    "cards": 6,
+    "nodes": 5,
+    "paths": 4
+  },
+  "layout_id": "svg_chart_poster__mobile_app__1280x720__n5_c6_b5_p4",
+  "output_asset_hash": "sha256:88b18a68e83a109c321c70554d67e364623b06093996742fa0ff2399f3a7de2b",
+  "output_format": "png",
+  "output_path": "images/sample_000956.png",
+  "parent_asset_hashes": [
+    "sha256:e68aee241500a144e426d14263318e717f3ccd4a9bd78b64c641d2d25655722d"
+  ],
+  "random_seed": 20261570,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000956",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:e68aee241500a144e426d14263318e717f3ccd4a9bd78b64c641d2d25655722d",
+  "source_path": "svg/sample_000956.svg",
+  "source_type": "svg",
+  "style_id": "mobile_app",
+  "template_family": "svg_chart_poster",
+  "wordlist_version": "local_wordlists_v1"
+}

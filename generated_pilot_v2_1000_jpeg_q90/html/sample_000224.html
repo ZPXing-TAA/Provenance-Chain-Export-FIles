@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rapid Index Register</title>
+<style>
+  :root {
+    --bg: #eef3f8;
+    --panel: #ffffff;
+    --ink: #152337;
+    --muted: #5f6f83;
+    --accent: #244f78;
+    --accent2: #718faa;
+    --line: #d2dce7;
+    --radius: 8px;
+    --shadow: 0 10px 28px rgba(28, 45, 70, 0.10);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 720px;
+    height: 1280px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .page {
+    width: 720px;
+    height: 1280px;
+    padding: 36px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 46px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Field Support</div>
+        <h1>Rapid Index Register</h1>
+      </div>
+      <div class="meta">
+        <div>Urban Systems Lab</div>
+        <div>February 23, 2026</div>
+        <div>RBE-9640-31</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Training module Public Programs program baseline service quality Quality Review updates resource card. Audits Data Services Procurement publishes regional maintenance set report reviews memo.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Planning Guide</td>
+            <td>Operations</td>
+            <td>Complete</td>
+            <td>96</td>
+            <td>Jun 9</td>
+          </tr>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Public Programs</td>
+            <td>Validated</td>
+            <td>99</td>
+            <td>Mar 8</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Quality Review</td>
+            <td>Queued</td>
+            <td>71</td>
+            <td>Nov 23</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Logistics</td>
+            <td>Review</td>
+            <td>47</td>
+            <td>Apr 14</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Finance</td>
+            <td>Delayed</td>
+            <td>47</td>
+            <td>Aug 15</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Planning</td>
+            <td>Ready</td>
+            <td>44</td>
+            <td>Feb 4</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Facilities</td>
+            <td>Queued</td>
+            <td>44</td>
+            <td>Oct 18</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Finance</td>
+            <td>Scheduled</td>
+            <td>96</td>
+            <td>Mar 19</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Facilities</td>
+            <td>Queued</td>
+            <td>86</td>
+            <td>Jan 15</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Quality Review</td>
+            <td>Monitoring</td>
+            <td>47</td>
+            <td>Jun 24</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Procurement</td>
+            <td>Complete</td>
+            <td>99</td>
+            <td>Jul 24</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Finance</td>
+            <td>Scheduled</td>
+            <td>93</td>
+            <td>Jan 17</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Resource Allocation</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

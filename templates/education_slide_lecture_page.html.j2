@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {% include "_common_css.html.j2" %}
+  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+    }
+    header {
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 18px;
+    }
+    h1 {
+      margin: 8px 0 0;
+      font-size: {{ typography.title_size }}px;
+      line-height: 1.03;
+      max-width: 980px;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .objectives {
+      padding: 26px;
+    }
+    .objectives ul {
+      margin: 18px 0 0;
+      padding-left: 22px;
+      font-size: 22px;
+      line-height: 1.48;
+    }
+    .right {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 18px;
+    }
+    .callout {
+      padding: 24px;
+      font-size: 23px;
+      line-height: 1.35;
+      background: var(--accent);
+      color: white;
+    }
+    .chart {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body class="{{ body_class }}">
+  <main class="page">
+    <header>
+      <div class="smallcaps">{{ org }} / {{ department }}</div>
+      <h1>{{ title }}</h1>
+      <p class="muted">{{ subtitle }}</p>
+    </header>
+    <section class="main">
+      <div class="card objectives">
+        <div class="smallcaps">Learning Objectives</div>
+        <ul>
+          {% for objective in objectives %}
+          <li>{{ objective }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="right">
+        <div class="card callout">{{ callout }}</div>
+        <div class="card chart">{{ chart_svg | safe }}</div>
+      </div>
+    </section>
+    <footer class="footer"><span>{{ month }} {{ day }}, {{ year }}</span><span>{{ code }}</span></footer>
+  </main>
+</body>
+</html>

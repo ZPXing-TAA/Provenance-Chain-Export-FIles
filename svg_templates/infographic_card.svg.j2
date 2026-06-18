@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <text x="{{ layout.margin }}" y="{{ layout.margin + 24 }}" class="small">{{ org }} / {{ department }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 42 }}" class="title">{{ title }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 82 }}" class="subtitle">{{ subtitle }}</text>
+  {% for card in cards %}
+  <g filter="url(#soft-shadow)">
+    <rect x="{{ card.x }}" y="{{ card.y }}" width="{{ card.w }}" height="{{ card.h }}" rx="14" class="panel"/>
+    <circle cx="{{ card.x + 42 }}" cy="{{ card.y + 42 }}" r="24" fill="url(#grad-main)"/>
+    <text x="{{ card.x + 33 }}" y="{{ card.y + 51 }}" font-family="{{ typography.font_family_css }}" font-size="24" font-weight="800" fill="#ffffff">{{ card.num }}</text>
+    <text x="{{ card.x + 84 }}" y="{{ card.y + 38 }}" class="body" font-weight="800">{{ card.title }}</text>
+    <text x="{{ card.x + 84 }}" y="{{ card.y + 68 }}" class="muted">{{ card.text }}</text>
+    <text x="{{ card.x + card.w - 88 }}" y="{{ card.y + card.h - 24 }}" font-family="{{ typography.font_family_css }}" font-size="28" font-weight="900" fill="{{ palette.accent }}">{{ card.value }}</text>
+  </g>
+  {% endfor %}
+  <text x="{{ layout.margin }}" y="{{ canvas.height - layout.margin }}" class="muted">{{ city }} / {{ code }}</text>
+</svg>

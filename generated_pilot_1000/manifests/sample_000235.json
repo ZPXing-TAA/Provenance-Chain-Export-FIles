@@ -1,0 +1,24 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1350,
+    "width": 1080
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:4fd933bd24c7efe5e6874b10b4744ca04a12625650076c1b5f152fa3ff20d112",
+  "external_assets_used": false,
+  "html_path": "html/sample_000235.html",
+  "html_sha256": "sha256:7e9d42d94ef31b5ade3858d463eaef27a25398620c3f50947a54a0cf996b0fb4",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:54e0e3b95ff1bbaa5e86a58b5319a3f6cb1cb14ee3b00117e797732871b8e80e",
+  "output_format": "png",
+  "output_path": "images/sample_000235.png",
+  "random_seed": 20260849,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000235",
+  "template_id": "poster_info_card",
+  "wordlist_version": "local_wordlists_v1"
+}

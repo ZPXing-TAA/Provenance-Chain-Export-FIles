@@ -1,0 +1,50 @@
+# ===== Image files =====
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
+*.ico
+*.raw
+*.heic
+*.heif
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+*.whl
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===== IDE / Editor =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ===== Environment / Config =====
+.env
+.env.local
+.env.*.local
+
+# ===== OS generated =====
+Thumbs.db
+ehthumbs.db

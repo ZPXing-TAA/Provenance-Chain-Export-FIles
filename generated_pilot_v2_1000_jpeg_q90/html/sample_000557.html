@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Report Bundle</title>
+<style>
+  :root {
+    --bg: #f6f2e8;
+    --panel: #fffdf7;
+    --ink: #1e1b16;
+    --muted: #6f6759;
+    --accent: #604b2f;
+    --accent2: #b79d74;
+    --line: #ded4be;
+    --radius: 2px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 48px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 64px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-academic_paper">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Cedar Field Office / Product Sheet</div>
+      <span class="pill">4.9 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#ded4be" opacity="0.35"/><circle cx="26.0" cy="26.0" r="16.64" fill="#604b2f"/><circle cx="32.24" cy="18.72" r="6.76" fill="#b79d74"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Facilities</div>
+          <h1>Report Bundle</h1>
+          <p class="muted">Research tracker report service quality supports expands index service desk tracks public feedback guide.</p>
+        </div>
+        <div class="price">$93.84</div>
+        <div class="feature-grid">
+          <div class="feature">Finance energy usage workspace utilization Field Support field kit inventory review measured.</div>
+          <div class="feature">Operations training schedule annual data notebook report bundle resource card public.</div>
+          <div class="feature">Prepares Training measured schedule product readiness review.</div>
+          <div class="feature">Quality Review notice measures prepares data notebook.</div>
+          <div class="feature">Index Field Support supports briefing measured resource allocation service desk route planner.</div>
+          <div class="feature">Finance aligns training schedule baseline facility maintenance.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Safety Packet</th>
+            <td>Operations</td>
+            <td>Queued</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <th>Report Bundle</th>
+            <td>Procurement</td>
+            <td>On Track</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <th>Resource Card</th>
+            <td>Quality Review</td>
+            <td>Review</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Quality Review</td>
+            <td>Complete</td>
+            <td>55</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Public Programs</td>
+            <td>Complete</td>
+            <td>63</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>QBK-8429-31</span><span>Eastbrook</span></footer>
+  </main>
+</body>
+</html>

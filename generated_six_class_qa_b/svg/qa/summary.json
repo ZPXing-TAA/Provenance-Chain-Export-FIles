@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_sizes": {
+    "1024x1024": 0,
+    "1240x1754": 1,
+    "1280x720": 0,
+    "720x1280": 0
+  },
+  "chain_events_for_png_master": [],
+  "external_assets_used": false,
+  "initial_digital_event": "digital_to_digital_file_export",
+  "missing_images": [],
+  "png_count": 1,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_count": 1,
+  "source_type": "svg",
+  "styles": {
+    "academic_paper": 0,
+    "bold_poster": 0,
+    "corporate_blue_gray": 0,
+    "dark_dashboard": 0,
+    "government_form": 0,
+    "minimal_white": 0,
+    "mobile_app": 0,
+    "retro_newspaper": 1
+  },
+  "templates": {
+    "svg_chart_poster": 0,
+    "svg_data_badge_sheet": 0,
+    "svg_flowchart_diagram": 0,
+    "svg_geometric_notice": 0,
+    "svg_infographic_card": 1,
+    "svg_process_map": 0,
+    "svg_route_or_network_map": 0,
+    "svg_timeline_strip": 0
+  }
+}

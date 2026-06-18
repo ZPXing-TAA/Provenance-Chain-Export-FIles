@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:d1492c7e173f1e945a22eab94f05b1fb50e7acdd2c3c0d7c2d4788a58d96b6c7",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "html_path": "html/sample_000905.html",
+  "html_sha256": "sha256:de89eb64b90c9acd9c509b0c569e182b57ceb495c777468da8376086a941bb02",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 1,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "poster_event_card__retro_newspaper__720x1280__s3_c4_t0_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:617e67ed7be79e72d98d85ae7665f3378c94d7276770d75c3c19597831ef06fd",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000905_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:f57819c425458f493e94e710d02aff71a38ae2b316118e4482d1e0545adb542f"
+  ],
+  "parent_sample_id": "sample_000905",
+  "random_seed": 20261519,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000905_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000905.png",
+  "style_id": "retro_newspaper",
+  "template_family": "poster_event_card",
+  "wordlist_version": "local_wordlists_v1"
+}

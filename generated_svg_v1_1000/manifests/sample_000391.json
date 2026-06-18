@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:99d7490856ee75c55b75daa431503cbd164b07fcc9fb6de872464d3e71a6b6d0",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 4,
+    "cards": 3,
+    "nodes": 8,
+    "paths": 2
+  },
+  "layout_id": "svg_data_badge_sheet__academic_paper__720x1280__n8_c3_b4_p2",
+  "output_asset_hash": "sha256:8b38e5b4ca63e85490ce46288abf872e64cac45dfd2c936aaedfbc6716f86d2d",
+  "output_format": "png",
+  "output_path": "images/sample_000391.png",
+  "parent_asset_hashes": [
+    "sha256:c81841b4ea553e51226449e39dd240de51b5d7a34c47b340aea6bda5cfca9e08"
+  ],
+  "random_seed": 20261005,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000391",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:c81841b4ea553e51226449e39dd240de51b5d7a34c47b340aea6bda5cfca9e08",
+  "source_path": "svg/sample_000391.svg",
+  "source_type": "svg",
+  "style_id": "academic_paper",
+  "template_family": "svg_data_badge_sheet",
+  "wordlist_version": "local_wordlists_v1"
+}

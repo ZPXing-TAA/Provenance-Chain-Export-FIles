@@ -1,0 +1,24 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1350,
+    "width": 1080
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:125d3b00b2043eacae3f3ad36dd22ba32126c23662feb14c26328bd68f11d2cf",
+  "external_assets_used": false,
+  "html_path": "html/sample_000813.html",
+  "html_sha256": "sha256:1defc25061e8af73fc3766bed84dfe3a073deabc827c461ff224e68247a053ad",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:609517c045f21778b8564ab94131d9a699b799bfed72a2b217802d4b98c3037c",
+  "output_format": "png",
+  "output_path": "images/sample_000813.png",
+  "random_seed": 20261427,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000813",
+  "template_id": "dashboard_with_charts",
+  "wordlist_version": "local_wordlists_v1"
+}

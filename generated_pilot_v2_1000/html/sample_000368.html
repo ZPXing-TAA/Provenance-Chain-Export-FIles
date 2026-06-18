@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seasonal Operations Thread</title>
+<style>
+  :root {
+    --bg: #efe4cc;
+    --panel: #f8efd9;
+    --ink: #1f1a12;
+    --muted: #6f614a;
+    --accent: #6b2d20;
+    --accent2: #af7d42;
+    --line: #cdbb98;
+    --radius: 0px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1240px;
+    height: 1754px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1240px;
+    height: 1754px;
+    padding: 48px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 74px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-retro_newspaper">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Seasonal Operations Thread</strong><br>
+          <span class="muted">Pioneer Data Desk / Cedar Falls</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Field Support</strong><br>
+            Snapshot Finance community planning seasonal operations training module measured.<br>
+            <span style="opacity: .68;">63:72</span>
+          </div>
+          <div class="bubble right">
+            <strong>Logistics</strong><br>
+            Summary program notice Operations safety packet rapid notice notice.<br>
+            <span style="opacity: .68;">45:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Data Services expands overview Procurement audits.<br>
+            <span style="opacity: .68;">56:12</span>
+          </div>
+          <div class="bubble left">
+            <strong>Logistics</strong><br>
+            Public feedback improves service desk audits transport capacity.<br>
+            <span style="opacity: .68;">12:18</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Updated balanced expands compact public coordinates Operations quarterly Procurement.<br>
+            <span style="opacity: .68;">56:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Inventory review product readiness briefing Research baseline resource card quarterly program field kit.<br>
+            <span style="opacity: .68;">12:84</span>
+          </div>
+          <div class="bubble left">
+            <strong>Field Support</strong><br>
+            Public Programs Procurement index resource card review publishes aligns.<br>
+            <span style="opacity: .68;">84:56</span>
+          </div>
+          <div class="bubble right">
+            <strong>Operations</strong><br>
+            Reviews field kit Field Support prepares route planner roadmap updates.<br>
+            <span style="opacity: .68;">45:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Focused Operations coordinates practical summary expands Facilities facility maintenance service desk.<br>
+            <span style="opacity: .68;">45:84</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Training regional report bundle Planning supports regional demand.<br>
+            <span style="opacity: .68;">45:24</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Cedar Field Office</div>
+        <h1>Seasonal Operations Thread</h1>
+        <p class="muted">Pioneer Data Desk / Cedar Falls</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Throughput</div>
+          <div class="value">341</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Utilization</div>
+          <div class="value">183</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Throughput</div>
+          <div class="value">742</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#cdbb98" opacity="0.35"/><rect x="12" y="12" width="48" height="48" rx="8" fill="#6b2d20"/><path d="M22 45 L36 24 L52 45 Z" fill="#af7d42"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

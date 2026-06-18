@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:ec65f1764078127db98f528185f8c60a0374ed02fcd13b925e13b1e7143c52e4",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 7,
+    "cards": 4,
+    "nodes": 6,
+    "paths": 4
+  },
+  "layout_id": "svg_timeline_strip__bold_poster__1280x720__n6_c4_b7_p4",
+  "output_asset_hash": "sha256:d84d561ddcf79d258df514732d8a99e95813c5a5b1db1686f953cc4021486f80",
+  "output_format": "png",
+  "output_path": "images/sample_000731.png",
+  "parent_asset_hashes": [
+    "sha256:a675ffade8df3cfad6bd7193934bf24e551eb5dbc25d24807f41579a9a6c6841"
+  ],
+  "random_seed": 20261345,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000731",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:a675ffade8df3cfad6bd7193934bf24e551eb5dbc25d24807f41579a9a6c6841",
+  "source_path": "svg/sample_000731.svg",
+  "source_type": "svg",
+  "style_id": "bold_poster",
+  "template_family": "svg_timeline_strip",
+  "wordlist_version": "local_wordlists_v1"
+}

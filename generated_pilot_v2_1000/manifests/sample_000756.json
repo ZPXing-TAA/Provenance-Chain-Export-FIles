@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:5310ec543a6d28befd17a981c5105c5de8cb06e2ea0523dc300896dff193249e",
+  "external_assets_used": false,
+  "font_family_id": "arial",
+  "html_path": "html/sample_000756.html",
+  "html_sha256": "sha256:04e2d0871172f5236072f30ddd2df60e1e5ee42969e3a45021e2e4179a0d62b1",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 2,
+    "charts": 0,
+    "sections": 5,
+    "tables": 2
+  },
+  "layout_id": "news_article_page__academic_paper__1024x1024__s5_c2_t2_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:02943640d6af6a1d6ae428d00fadf5e482ebc61cffefd5b6182a0631fb5c908f",
+  "output_format": "png",
+  "output_path": "images/sample_000756.png",
+  "parent_sample_id": null,
+  "random_seed": 20261370,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000756",
+  "style_id": "academic_paper",
+  "template_family": "news_article_page",
+  "wordlist_version": "local_wordlists_v1"
+}

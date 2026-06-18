@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:a96717e1588cf8d6ba2ec27d7936b86005e820bf0d5b804d49d08ba0d0ee95ff",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": "html/sample_000839.html",
+  "html_sha256": "sha256:a560682eb3245b9d8322f14a855893294030a2ec0993f08dd5101f2924c22864",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 2,
+    "sections": 5,
+    "tables": 1
+  },
+  "layout_id": "infographic_timeline_flowchart__academic_paper__720x1280__s5_c4_t1_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:995b2669073041eefa942bb902c5305f52b917d8fa66fbc3b978d4db205c6e24",
+  "output_format": "png",
+  "output_path": "images/sample_000839.png",
+  "parent_sample_id": null,
+  "random_seed": 20261453,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000839",
+  "style_id": "academic_paper",
+  "template_family": "infographic_timeline_flowchart",
+  "wordlist_version": "local_wordlists_v1"
+}

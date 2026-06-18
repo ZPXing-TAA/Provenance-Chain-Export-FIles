@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Service Quality Thread</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --panel: #ffffff;
+    --ink: #172033;
+    --muted: #647084;
+    --accent: #2f5f8f;
+    --accent2: #8fb3d9;
+    --line: #dce3ec;
+    --radius: 6px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 1.28;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 42px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 69px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-minimal_white">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Service Quality Thread</strong><br>
+          <span class="muted">Bright Parcel Works / Stonebridge</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Finance</strong><br>
+            Focused product readiness Facilities survey panel Public Programs Training Training.<br>
+            <span style="opacity: .68;">12:84</span>
+          </div>
+          <div class="bubble right">
+            <strong>Quality Review</strong><br>
+            Quality Review planning guide publishes Planning Operations data notebook overview compact review notice.<br>
+            <span style="opacity: .68;">56:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Finance</strong><br>
+            Regional demand practical community planning review survey panel Finance.<br>
+            <span style="opacity: .68;">84:18</span>
+          </div>
+          <div class="bubble left">
+            <strong>Facilities</strong><br>
+            Compact improves annual Quality Review Finance summarizes workspace utilization.<br>
+            <span style="opacity: .68;">31:84</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Sensor pack planning guide internal report packet training module packet delivery routing Quality Review.<br>
+            <span style="opacity: .68;">56:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Finance</strong><br>
+            Finance training schedule community planning priority updates memo Facilities service quality measures.<br>
+            <span style="opacity: .68;">72:84</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Clearwater Planning</div>
+        <h1>Service Quality Thread</h1>
+        <p class="muted">Bright Parcel Works / Stonebridge</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Completion</div>
+          <div class="value">215</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Utilization</div>
+          <div class="value">183</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Retention</div>
+          <div class="value">426</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#dce3ec" opacity="0.35"/><path d="M18 22 L54 24 L42 54 L18 22" fill="none" stroke="#2f5f8f" stroke-width="5"/><circle cx="18" cy="22" r="7" fill="#8fb3d9"/><circle cx="54" cy="24" r="7" fill="#2f5f8f"/><circle cx="42" cy="54" r="7" fill="#8fb3d9"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

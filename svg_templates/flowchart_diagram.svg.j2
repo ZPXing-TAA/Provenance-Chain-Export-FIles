@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ canvas.width }}" height="{{ canvas.height }}" viewBox="0 0 {{ canvas.width }} {{ canvas.height }}">
+  {% include "_svg_common.svg.j2" %}
+  <text x="{{ layout.margin }}" y="{{ layout.margin + 18 }}" class="small">{{ org }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 34 }}" class="title">{{ title }}</text>
+  <text x="{{ layout.margin }}" y="{{ layout.margin + typography.title_size + 72 }}" class="subtitle">{{ subtitle }}</text>
+  {% for edge in edges %}
+  <path d="M {{ edge.x1 }} {{ edge.y1 }} C {{ (edge.x1 + edge.x2) / 2 }} {{ edge.y1 }}, {{ (edge.x1 + edge.x2) / 2 }} {{ edge.y2 }}, {{ edge.x2 }} {{ edge.y2 }}" class="accent-line"/>
+  {% endfor %}
+  {% for node in nodes %}
+  <g filter="url(#soft-shadow)">
+    <circle cx="{{ node.x }}" cy="{{ node.y }}" r="{{ node.r + 16 }}" fill="{{ palette.panel }}" stroke="{{ palette.line }}" stroke-width="2"/>
+    <circle cx="{{ node.x }}" cy="{{ node.y }}" r="{{ node.r }}" fill="url(#grad-main)"/>
+    <text x="{{ node.x - node.r * 1.6 }}" y="{{ node.y + node.r + 34 }}" class="body" font-weight="800">{{ node.title }}</text>
+    <text x="{{ node.x - node.r * 1.6 }}" y="{{ node.y + node.r + 62 }}" class="muted">{{ node.label }}</text>
+  </g>
+  {% endfor %}
+  <text x="{{ layout.margin }}" y="{{ canvas.height - layout.margin }}" class="muted">{{ department }} / {{ code }}</text>
+</svg>

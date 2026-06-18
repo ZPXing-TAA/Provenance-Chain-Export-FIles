@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1754,
+    "width": 1240
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:0420d046e6f2336fdccc7454756a838838638646ef33fc48ae0c6500043a57eb",
+  "external_assets_used": false,
+  "font_family_id": "times",
+  "html_path": "html/sample_000250.html",
+  "html_sha256": "sha256:6e571c4f8f09a3df4c0055b2431c7c96faf86fea86e0f899cc214baceefdd349",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 1,
+    "sections": 4,
+    "tables": 0
+  },
+  "layout_id": "education_slide_lecture_page__corporate_blue_gray__1240x1754__s4_c4_t0_ch1",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:c455d4709261e4d391df0f391f5926c2a05674c6e68e5452a6756f97a50e41dd",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000250_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:d6cfc966155bc7783120424f51600878297a17822adfb8d5bc487a9e17f11af4"
+  ],
+  "parent_sample_id": "sample_000250",
+  "random_seed": 20260864,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000250_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000250.png",
+  "style_id": "corporate_blue_gray",
+  "template_family": "education_slide_lecture_page",
+  "wordlist_version": "local_wordlists_v1"
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {% include "_common_css.html.j2" %}
+  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: {{ typography.title_size }}px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">{{ department }}</div>
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="meta">
+        <div>{{ org }}</div>
+        <div>{{ month }} {{ day }}, {{ year }}</div>
+        <div>{{ code }}</div>
+      </div>
+    </header>
+    <section class="card intro">
+      {{ intro }}
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            {% for col in columns %}
+            <th>{{ col }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in rows %}
+          <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>{{ footer_left }}</span>
+      <span>{{ footer_right }}</span>
+    </footer>
+  </main>
+</body>
+</html>

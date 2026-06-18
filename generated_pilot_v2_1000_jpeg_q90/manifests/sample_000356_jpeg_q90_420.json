@@ -1,0 +1,68 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:7c392c4b8f95205fb3b6639e7987fcf917f36a1c7e9e463bc281337f4212f197",
+  "external_assets_used": false,
+  "font_family_id": "arial",
+  "html_path": "html/sample_000356.html",
+  "html_sha256": "sha256:dcd340232ce7a8fbb17782f02828294c48190bf97c8f6f1643d98735d369ece4",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 2,
+    "sections": 2,
+    "tables": 0
+  },
+  "layout_id": "news_article_page__bold_poster__1024x1024__s2_c4_t0_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:f792e37b21c1d48e58c345e045971872fdc6993cbf683add06b46fe5480ac3b2",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000356_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:52f927c0eebe3691b1f2aac5113f41a23a8dfe484fa38ea03cbd489a600bd678"
+  ],
+  "parent_sample_id": "sample_000356",
+  "random_seed": 20260970,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000356_jpeg_q90_420",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_pilot_v2_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000356.png",
+  "style_id": "bold_poster",
+  "template_family": "news_article_page",
+  "wordlist_version": "local_wordlists_v1"
+}

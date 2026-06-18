@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:61f80f91f69060551478b75d939cce438cf2c5b49b0ddf606cbc8ac537e8bafc",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 4,
+    "cards": 5,
+    "nodes": 7,
+    "paths": 2
+  },
+  "layout_id": "svg_geometric_notice__government_form__720x1280__n7_c5_b4_p2",
+  "output_asset_hash": "sha256:7d069cd8c28512ecfcc0878cccb137b322a3315a30cbbd7fad0080ca2e0f1807",
+  "output_format": "png",
+  "output_path": "images/sample_000782.png",
+  "parent_asset_hashes": [
+    "sha256:1ed23ced04ce4ccd69c3d84b2e305d57889f63cb4cfb37741335e795c262d2d1"
+  ],
+  "random_seed": 20261396,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000782",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:1ed23ced04ce4ccd69c3d84b2e305d57889f63cb4cfb37741335e795c262d2d1",
+  "source_path": "svg/sample_000782.svg",
+  "source_type": "svg",
+  "style_id": "government_form",
+  "template_family": "svg_geometric_notice",
+  "wordlist_version": "local_wordlists_v1"
+}

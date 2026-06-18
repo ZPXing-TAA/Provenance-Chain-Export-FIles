@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {% include "_common_css.html.j2" %}
+  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: {{ typography.title_size }}px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="{{ body_class }}">
+  <main class="page">
+    <header>
+      <div class="smallcaps">{{ org }} / Product Sheet</div>
+      <span class="pill">{{ rating }}</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame">{{ icons[1] | safe }}</div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">{{ department }}</div>
+          <h1>{{ title }}</h1>
+          <p class="muted">{{ subtitle }}</p>
+        </div>
+        <div class="price">{{ price }}</div>
+        <div class="feature-grid">
+          {% for feature in features %}
+          <div class="feature">{{ feature }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          {% for row in spec_rows %}
+          <tr>
+            <th>{{ row[0] }}</th>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>{{ code }}</span><span>{{ city }}</span></footer>
+  </main>
+</body>
+</html>

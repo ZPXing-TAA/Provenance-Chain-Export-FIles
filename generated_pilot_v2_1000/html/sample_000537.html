@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Safety Packet</title>
+<style>
+  :root {
+    --bg: #0d1424;
+    --panel: #151f33;
+    --ink: #eef4ff;
+    --muted: #99aac3;
+    --accent: #6db7ff;
+    --accent2: #60d0a8;
+    --line: #293850;
+    --radius: 8px;
+    --shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 56px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 65px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-dark_dashboard">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Silver Oak Research / Product Sheet</div>
+      <span class="pill">4.3 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#293850" opacity="0.35"/><rect x="12" y="12" width="48" height="48" rx="8" fill="#6db7ff"/><path d="M22 45 L36 24 L52 45 Z" fill="#60d0a8"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Public Programs</div>
+          <h1>Safety Packet</h1>
+          <p class="muted">Launches facility maintenance coordinates publishes audits measures memo workspace utilization index rapid.</p>
+        </div>
+        <div class="price">$59.18</div>
+        <div class="feature-grid">
+          <div class="feature">Report service desk launches briefing review resource card inventory review.</div>
+          <div class="feature">Tracks baseline facility maintenance launches Facilities reviews index.</div>
+          <div class="feature">Procurement improves schedule training module aligns.</div>
+          <div class="feature">Measures launches survey panel Logistics snapshot planning guide Research inventory review.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Training Module</th>
+            <td>Quality Review</td>
+            <td>Review</td>
+            <td>59</td>
+          </tr>
+          <tr>
+            <th>Resource Card</th>
+            <td>Finance</td>
+            <td>On Track</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Planning</td>
+            <td>On Track</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Training</td>
+            <td>Draft</td>
+            <td>52</td>
+          </tr>
+          <tr>
+            <th>Field Kit</th>
+            <td>Data Services</td>
+            <td>Validated</td>
+            <td>93</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>CQA-7350-12</span><span>Cedar Falls</span></footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<defs>
+  <linearGradient id="grad-main" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="{{ palette.accent }}"/>
+    <stop offset="100%" stop-color="{{ palette.accent2 }}"/>
+  </linearGradient>
+  <pattern id="dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="3" cy="3" r="1.5" fill="{{ palette.line }}" opacity="0.65"/>
+  </pattern>
+  <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="{{ palette.ink }}" flood-opacity="0.14"/>
+  </filter>
+</defs>
+<style>
+  .title { font-family: {{ typography.font_family_css }}; font-size: {{ typography.title_size }}px; font-weight: 800; fill: {{ palette.ink }}; }
+  .subtitle { font-family: {{ typography.font_family_css }}; font-size: {{ typography.body_size }}px; fill: {{ palette.muted }}; }
+  .small { font-family: {{ typography.font_family_css }}; font-size: {{ typography.small_size }}px; font-weight: 700; letter-spacing: 1.8px; fill: {{ palette.muted }}; }
+  .body { font-family: {{ typography.font_family_css }}; font-size: {{ typography.body_size }}px; fill: {{ palette.ink }}; }
+  .muted { font-family: {{ typography.font_family_css }}; font-size: {{ typography.small_size }}px; fill: {{ palette.muted }}; }
+  .panel { fill: {{ palette.panel }}; stroke: {{ palette.line }}; stroke-width: 1.4; }
+  .line { stroke: {{ palette.line }}; stroke-width: 3; fill: none; }
+  .accent-line { stroke: {{ palette.accent }}; stroke-width: 5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+</style>
+<rect width="{{ canvas.width }}" height="{{ canvas.height }}" fill="{{ palette.bg }}"/>
+<rect width="{{ canvas.width }}" height="{{ canvas.height }}" fill="url(#dot-grid)" opacity="0.35"/>

@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:5dd912a195c0a1dc7490a3145dee7f3d18b24d427c55738a2c338d9cb02c5047",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "html_path": "html/sample_000090.html",
+  "html_sha256": "sha256:aac3b65989e8d859c1ec13861a134c7f51cdd44454d759230d398162f6cc2c76",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 3,
+    "sections": 4,
+    "tables": 0
+  },
+  "layout_id": "education_slide_lecture_page__government_form__1280x720__s4_c4_t0_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:714a0d6de08b68b7bf9684e3ce6b6b17d2670d8ebd3bfae0e8a9972c34f9cad4",
+  "output_format": "png",
+  "output_path": "images/sample_000090.png",
+  "parent_sample_id": null,
+  "random_seed": 20260704,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000090",
+  "style_id": "government_form",
+  "template_family": "education_slide_lecture_page",
+  "wordlist_version": "local_wordlists_v1"
+}

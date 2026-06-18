@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Memo Register</title>
+<style>
+  :root {
+    --bg: #eef7f6;
+    --panel: #ffffff;
+    --ink: #102524;
+    --muted: #637d7a;
+    --accent: #168174;
+    --accent2: #74c9bd;
+    --line: #cfebe7;
+    --radius: 16px;
+    --shadow: 0 12px 30px rgba(15, 84, 77, 0.12);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 36px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 57px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Quality Review</div>
+        <h1>Quarterly Memo Register</h1>
+      </div>
+      <div class="meta">
+        <div>Blue Finch Collective</div>
+        <div>April 16, 2026</div>
+        <div>REL-1380-18</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Measures report bundle forward Research product readiness briefing public internal summarizes expands. Public Programs tracker updated guide internal program measured safety packet summarizes tracks updated transport capacity.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Public Programs</td>
+            <td>Scheduled</td>
+            <td>78</td>
+            <td>Oct 10</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Research</td>
+            <td>Queued</td>
+            <td>96</td>
+            <td>Aug 17</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Quality Review</td>
+            <td>Validated</td>
+            <td>74</td>
+            <td>Oct 11</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Public Programs</td>
+            <td>Draft</td>
+            <td>82</td>
+            <td>Aug 20</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Field Support</td>
+            <td>Complete</td>
+            <td>67</td>
+            <td>Sep 3</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Planning</td>
+            <td>Validated</td>
+            <td>40</td>
+            <td>Sep 5</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Research</td>
+            <td>Ready</td>
+            <td>78</td>
+            <td>Sep 15</td>
+          </tr>
+          <tr>
+            <td>Maintenance Set</td>
+            <td>Data Services</td>
+            <td>Draft</td>
+            <td>40</td>
+            <td>Dec 5</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Field Support</td>
+            <td>On Track</td>
+            <td>90</td>
+            <td>Jul 24</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Regional Demand</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

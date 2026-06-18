@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Inventory Review Thread</title>
+<style>
+  :root {
+    --bg: #f8fafc;
+    --panel: #ffffff;
+    --ink: #172033;
+    --muted: #647084;
+    --accent: #2f5f8f;
+    --accent2: #8fb3d9;
+    --line: #dce3ec;
+    --radius: 6px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1280px;
+    height: 720px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.28;
+  }
+  .page {
+    width: 1280px;
+    height: 720px;
+    padding: 32px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 48px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-minimal_white">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Inventory Review Thread</strong><br>
+          <span class="muted">Atlas Harbor Group / Hillcrest</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Quality Review</strong><br>
+            Resource card route planner Procurement Procurement focused.<br>
+            <span style="opacity: .68;">97:63</span>
+          </div>
+          <div class="bubble right">
+            <strong>Quality Review</strong><br>
+            Data Services public maintenance set measures aligns overview briefing forward product readiness.<br>
+            <span style="opacity: .68;">24:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Finance</strong><br>
+            Public feedback supports supports baseline Planning rapid public feedback service quality summarizes.<br>
+            <span style="opacity: .68;">18:31</span>
+          </div>
+          <div class="bubble left">
+            <strong>Procurement</strong><br>
+            Service desk workspace utilization measured resource allocation rapid baseline Quality Review annual.<br>
+            <span style="opacity: .68;">31:45</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Operations report bundle measures tracks prepares annual snapshot quarterly.<br>
+            <span style="opacity: .68;">72:31</span>
+          </div>
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Planning guide snapshot data notebook guide forward Facilities maintenance set practical reviews.<br>
+            <span style="opacity: .68;">72:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Data Services</strong><br>
+            Inventory review priority Training review snapshot rapid Logistics.<br>
+            <span style="opacity: .68;">56:12</span>
+          </div>
+          <div class="bubble right">
+            <strong>Facilities</strong><br>
+            Coordinates tracker schedule workspace utilization baseline.<br>
+            <span style="opacity: .68;">84:56</span>
+          </div>
+          <div class="bubble left">
+            <strong>Training</strong><br>
+            Training module balanced balanced maintenance set regional demand planning guide public report Logistics.<br>
+            <span style="opacity: .68;">56:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Field Support</strong><br>
+            Measured updates community planning forward safety packet transport capacity Facilities summarizes Field Support.<br>
+            <span style="opacity: .68;">24:84</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Atlas Harbor Group</div>
+        <h1>Inventory Review Thread</h1>
+        <p class="muted">Atlas Harbor Group / Hillcrest</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Coverage</div>
+          <div class="value">147</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Capacity</div>
+          <div class="value">215</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Accuracy</div>
+          <div class="value">341</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#dce3ec" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#2f5f8f"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#8fb3d9"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

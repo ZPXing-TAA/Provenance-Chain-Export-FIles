@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:9cce15a703e23bafda7a7ce582eb641957882f448ed428bc9dfbc3940c520a7a",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000416.html",
+  "html_sha256": "sha256:a97e4853f4b9a2a0e556dcd78b67861e35e0272552b86f467e1bf4e0d4d0dcae",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 3,
+    "sections": 2,
+    "tables": 1
+  },
+  "layout_id": "news_article_page__bold_poster__1280x720__s2_c4_t1_ch3",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:a0c9e41ebef940ced7406ab1d40bc1d83deb0e6483a4e9d26d87cf2bbddebd31",
+  "output_format": "png",
+  "output_path": "images/sample_000416.png",
+  "parent_sample_id": null,
+  "random_seed": 20261030,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000416",
+  "style_id": "bold_poster",
+  "template_family": "news_article_page",
+  "wordlist_version": "local_wordlists_v1"
+}

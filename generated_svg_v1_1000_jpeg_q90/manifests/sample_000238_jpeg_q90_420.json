@@ -1,0 +1,70 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [
+    {
+      "event_kind": "manipulation_or_processing",
+      "event_type": "digital_recompression",
+      "mask_path": null,
+      "operation_registry_ref": "pillow_jpeg_recompression",
+      "order": 1,
+      "parameters": {
+        "codec": "jpeg",
+        "optimize": false,
+        "progressive": false,
+        "quality": 90,
+        "software": "Pillow",
+        "software_version": "11.3.0",
+        "source_output_format": "png",
+        "subsampling": "4:2:0"
+      },
+      "scope": "global",
+      "semantic_change_degree": "none"
+    }
+  ],
+  "decoded_pixel_hash": "sha256:985532951f06f793fe17279d3a0f08f67e302856fc0e76cb8e3a60e5734ff760",
+  "external_assets_used": false,
+  "font_family_id": "courier",
+  "html_path": null,
+  "initial_digital_event": "digital_to_digital_file_export",
+  "jpeg_recompression": {
+    "optimize": false,
+    "progressive": false,
+    "quality": 90,
+    "software": "Pillow",
+    "software_version": "11.3.0",
+    "subsampling": "4:2:0"
+  },
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 4,
+    "cards": 3,
+    "nodes": 5,
+    "paths": 2
+  },
+  "layout_id": "svg_geometric_notice__government_form__1280x720__n5_c3_b4_p2",
+  "output_asset_hash": "sha256:2220cec03b954e12c50a4d227e3b1e15e5fc24e7e94285f18bd65c37e7e02a90",
+  "output_format": "jpeg",
+  "output_path": "images/sample_000238_jpeg_q90_420.jpg",
+  "parent_asset_hashes": [
+    "sha256:512821c6a7c2659f1152f43593ecadea9b031a8d3dbc9fe66aa9a99f05704fd7"
+  ],
+  "parent_sample_id": "sample_000238",
+  "random_seed": 20260852,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000238_jpeg_q90_420",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:5a3470e9589505b6907fedf0b85037dc670c0be0985a885f96b9c6ec62c5cc39",
+  "source_manifest_path": "/Users/xingzhengpeng/CODEZONE/AIGC Detection/Provenance chain/pilot_export_workflow/generated_svg_v1_1000/manifests/samples.jsonl",
+  "source_output_path": "images/sample_000238.png",
+  "source_path": "svg/sample_000238.svg",
+  "source_type": "svg",
+  "style_id": "government_form",
+  "template_family": "svg_geometric_notice",
+  "wordlist_version": "local_wordlists_v1"
+}

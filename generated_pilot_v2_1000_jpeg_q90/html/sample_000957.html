@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Report Bundle</title>
+<style>
+  :root {
+    --bg: #f8e9d0;
+    --panel: #fffaf0;
+    --ink: #201612;
+    --muted: #725f4a;
+    --accent: #d4472f;
+    --accent2: #ffc857;
+    --line: #ead0a8;
+    --radius: 8px;
+    --shadow: 8px 8px 0 rgba(32, 22, 18, 0.18);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 36px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 67px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-bold_poster">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Harbor Signal Office / Product Sheet</div>
+      <span class="pill">4.7 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#ead0a8" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#d4472f"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#ffc857"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Operations</div>
+          <h1>Report Bundle</h1>
+          <p class="muted">Balanced public feedback regional demand workspace utilization coordinates aligns Facilities seasonal operations.</p>
+        </div>
+        <div class="price">$44.18</div>
+        <div class="feature-grid">
+          <div class="feature">Publishes measures facility maintenance forward notice report.</div>
+          <div class="feature">Regional demand overview briefing guide updates Training.</div>
+          <div class="feature">Report summary supports training module field kit Finance resource allocation.</div>
+          <div class="feature">Tracks baseline regional planning guide briefing.</div>
+          <div class="feature">Practical public feedback route planner supports Data Services overview updates.</div>
+          <div class="feature">Regional briefing roadmap reviews notice practical.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Training Module</th>
+            <td>Field Support</td>
+            <td>Review</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <th>Safety Packet</th>
+            <td>Field Support</td>
+            <td>Complete</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>Service Desk</th>
+            <td>Operations</td>
+            <td>Review</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <th>Survey Panel</th>
+            <td>Finance</td>
+            <td>Validated</td>
+            <td>86</td>
+          </tr>
+          <tr>
+            <th>Planning Guide</th>
+            <td>Research</td>
+            <td>Queued</td>
+            <td>71</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>PMD-3025-31</span><span>Stonebridge</span></footer>
+  </main>
+</body>
+</html>

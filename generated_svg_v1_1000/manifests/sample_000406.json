@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1754,
+    "width": 1240
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:94d58c953836b45a08ff8a604863836d8ef3a5ce92ab1223cf3c710a3b59e7e8",
+  "external_assets_used": false,
+  "font_family_id": "georgia",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 5,
+    "cards": 3,
+    "nodes": 7,
+    "paths": 2
+  },
+  "layout_id": "svg_geometric_notice__academic_paper__1240x1754__n7_c3_b5_p2",
+  "output_asset_hash": "sha256:cb8285246bf8d1276567b107fcd0157263972788d6732a09449184252ce5ad4c",
+  "output_format": "png",
+  "output_path": "images/sample_000406.png",
+  "parent_asset_hashes": [
+    "sha256:bdbb4e0ccd439744d0c5e0b983617d29ed0811bdfd7824cae12d734eb97e8644"
+  ],
+  "random_seed": 20261020,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000406",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:bdbb4e0ccd439744d0c5e0b983617d29ed0811bdfd7824cae12d734eb97e8644",
+  "source_path": "svg/sample_000406.svg",
+  "source_type": "svg",
+  "style_id": "academic_paper",
+  "template_family": "svg_geometric_notice",
+  "wordlist_version": "local_wordlists_v1"
+}

@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Service Quality Thread</title>
+<style>
+  :root {
+    --bg: #f8e9d0;
+    --panel: #fffaf0;
+    --ink: #201612;
+    --muted: #725f4a;
+    --accent: #d4472f;
+    --accent2: #ffc857;
+    --line: #ead0a8;
+    --radius: 8px;
+    --shadow: 8px 8px 0 rgba(32, 22, 18, 0.18);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 720px;
+    height: 1280px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.28;
+  }
+  .page {
+    width: 720px;
+    height: 1280px;
+    padding: 24px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 47px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-bold_poster">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Service Quality Thread</strong><br>
+          <span class="muted">Pioneer Data Desk / Eastbrook</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Facilities</strong><br>
+            Data Services service desk organizes reviews summarizes guide focused field kit summary tracker.<br>
+            <span style="opacity: .68;">24:97</span>
+          </div>
+          <div class="bubble right">
+            <strong>Field Support</strong><br>
+            Coordinates internal facility maintenance rapid community planning resource allocation inventory review Public Programs.<br>
+            <span style="opacity: .68;">97:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Research</strong><br>
+            Maintenance set energy usage seasonal operations supports regional demand training schedule briefing service desk launches.<br>
+            <span style="opacity: .68;">18:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Quality Review</strong><br>
+            Logistics Procurement Facilities supports resource allocation internal Operations Quality Review.<br>
+            <span style="opacity: .68;">84:72</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Public feedback priority delivery routing measures measures focused field kit measured.<br>
+            <span style="opacity: .68;">31:63</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Quarterly launches Quality Review Logistics service desk measures compact Training notice.<br>
+            <span style="opacity: .68;">72:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Facilities</strong><br>
+            Finance compact schedule program training module report workspace utilization focused expands.<br>
+            <span style="opacity: .68;">45:45</span>
+          </div>
+          <div class="bubble right">
+            <strong>Logistics</strong><br>
+            Energy usage Public Programs Procurement data notebook overview.<br>
+            <span style="opacity: .68;">18:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Training</strong><br>
+            Balanced prepares reviews priority supports delivery routing Training Facilities supports publishes.<br>
+            <span style="opacity: .68;">56:63</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Summit Materials Team</div>
+        <h1>Service Quality Thread</h1>
+        <p class="muted">Pioneer Data Desk / Eastbrook</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Completion</div>
+          <div class="value">24</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Retention</div>
+          <div class="value">590</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Utilization</div>
+          <div class="value">58</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#ead0a8" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#d4472f"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#ffc857"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

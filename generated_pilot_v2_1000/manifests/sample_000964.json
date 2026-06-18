@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:c2bdfec2b97b2b6c9f6659bfecd6e74b0d0d1af9e1b1bb736c5caa5830f83629",
+  "external_assets_used": false,
+  "font_family_id": "trebuchet",
+  "html_path": "html/sample_000964.html",
+  "html_sha256": "sha256:570b4c265ec649bda969abf9dbbe47e032077de61e05a72d253de04ced7ddd07",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 4,
+    "charts": 0,
+    "sections": 5,
+    "tables": 1
+  },
+  "layout_id": "table_form_menu__government_form__720x1280__s5_c4_t1_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:4ccfce4f42185181d8b55284fe6a12f15e89a94fd4987ca13efb247b592d07a0",
+  "output_format": "png",
+  "output_path": "images/sample_000964.png",
+  "parent_sample_id": null,
+  "random_seed": 20261578,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000964",
+  "style_id": "government_form",
+  "template_family": "table_form_menu",
+  "wordlist_version": "local_wordlists_v1"
+}

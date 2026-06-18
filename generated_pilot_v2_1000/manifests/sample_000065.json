@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:9a9ce3e2ce87aaba3397ca5554fc8ddee5f3231f351ee9630c69f447c8376cab",
+  "external_assets_used": false,
+  "font_family_id": "arial",
+  "html_path": "html/sample_000065.html",
+  "html_sha256": "sha256:b3535b24be027d699cdbff07229e1a1333c592949902db71ba1efb846a96527c",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 6,
+    "charts": 1,
+    "sections": 3,
+    "tables": 2
+  },
+  "layout_id": "poster_event_card__minimal_white__720x1280__s3_c6_t2_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:c6205a9cdee7b1cecfa5b4b15b3bb2d66ea7e733930150e59b81ff4059cda7ef",
+  "output_format": "png",
+  "output_path": "images/sample_000065.png",
+  "parent_sample_id": null,
+  "random_seed": 20260679,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000065",
+  "style_id": "minimal_white",
+  "template_family": "poster_event_card",
+  "wordlist_version": "local_wordlists_v1"
+}

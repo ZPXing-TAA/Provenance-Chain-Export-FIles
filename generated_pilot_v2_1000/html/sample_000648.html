@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Public Feedback Thread</title>
+<style>
+  :root {
+    --bg: #eef7f6;
+    --panel: #ffffff;
+    --ink: #102524;
+    --muted: #637d7a;
+    --accent: #168174;
+    --accent2: #74c9bd;
+    --line: #cfebe7;
+    --radius: 16px;
+    --shadow: 0 12px 30px rgba(15, 84, 77, 0.12);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 71px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-mobile_app">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Public Feedback Thread</strong><br>
+          <span class="muted">Blue Finch Collective / Westport</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Operations</strong><br>
+            Tracks Research baseline coordinates report forward.<br>
+            <span style="opacity: .68;">24:24</span>
+          </div>
+          <div class="bubble right">
+            <strong>Procurement</strong><br>
+            Service desk notice Planning aligns packet Procurement data notebook field kit.<br>
+            <span style="opacity: .68;">24:63</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Baseline resource allocation product readiness Training aligns Data Services.<br>
+            <span style="opacity: .68;">18:97</span>
+          </div>
+          <div class="bubble left">
+            <strong>Facilities</strong><br>
+            Planning guide public feedback quarterly launches Public Programs Training Data Services updates notice.<br>
+            <span style="opacity: .68;">63:31</span>
+          </div>
+          <div class="bubble right">
+            <strong>Operations</strong><br>
+            Expands sensor pack public Facilities expands.<br>
+            <span style="opacity: .68;">63:63</span>
+          </div>
+          <div class="bubble left">
+            <strong>Data Services</strong><br>
+            Improves rapid facility maintenance forward tracks.<br>
+            <span style="opacity: .68;">72:97</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Guide launches planning guide Data Services priority rapid Procurement.<br>
+            <span style="opacity: .68;">18:63</span>
+          </div>
+          <div class="bubble right">
+            <strong>Quality Review</strong><br>
+            Training module priority report bundle balanced facility maintenance Operations training schedule.<br>
+            <span style="opacity: .68;">24:24</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Horizon Market Unit</div>
+        <h1>Public Feedback Thread</h1>
+        <p class="muted">Blue Finch Collective / Westport</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Satisfaction</div>
+          <div class="value">268</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Coverage</div>
+          <div class="value">742</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Accuracy</div>
+          <div class="value">58</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><rect width="72" height="72" rx="12" fill="#cfebe7" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#168174"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#74c9bd"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

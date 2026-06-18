@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Delivery Routing Thread</title>
+<style>
+  :root {
+    --bg: #efe4cc;
+    --panel: #f8efd9;
+    --ink: #1f1a12;
+    --muted: #6f614a;
+    --accent: #6b2d20;
+    --accent2: #af7d42;
+    --line: #cdbb98;
+    --radius: 0px;
+    --shadow: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    line-height: 1.45;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-columns: minmax(320px, 460px) 1fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .phone {
+      border-radius: 32px;
+      padding: 18px;
+      background: var(--ink);
+      box-shadow: var(--shadow);
+      min-height: 0;
+    }
+    .screen {
+      height: 100%;
+      border-radius: 22px;
+      background: var(--panel);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+    .topbar {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+    .messages {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow: hidden;
+    }
+    .bubble {
+      max-width: 82%;
+      border-radius: 18px;
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent2), white 60%);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .bubble.right {
+      align-self: flex-end;
+      background: var(--accent);
+      color: white;
+    }
+    .side {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 68px;
+      line-height: 1;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    .social-card {
+      padding: 22px;
+    }
+    .value {
+      color: var(--accent);
+      font-size: 40px;
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body class="style-retro_newspaper">
+  <main class="page">
+    <section class="phone">
+      <div class="screen">
+        <div class="topbar">
+          <strong>Delivery Routing Thread</strong><br>
+          <span class="muted">Horizon Market Unit / Maple Junction</span>
+        </div>
+        <div class="messages">
+          <div class="bubble left">
+            <strong>Quality Review</strong><br>
+            Safety packet measured Field Support publishes schedule Finance route planner expands aligns.<br>
+            <span style="opacity: .68;">18:84</span>
+          </div>
+          <div class="bubble right">
+            <strong>Operations</strong><br>
+            Data notebook balanced workspace utilization memo focused index improves workspace utilization improves briefing.<br>
+            <span style="opacity: .68;">45:84</span>
+          </div>
+          <div class="bubble left">
+            <strong>Public Programs</strong><br>
+            Schedule reviews Logistics organizes coordinates.<br>
+            <span style="opacity: .68;">56:45</span>
+          </div>
+          <div class="bubble left">
+            <strong>Finance</strong><br>
+            Guide publishes report forward Logistics energy usage schedule Research.<br>
+            <span style="opacity: .68;">24:56</span>
+          </div>
+          <div class="bubble right">
+            <strong>Research</strong><br>
+            Review training module summarizes Field Support data notebook quarterly summary packet.<br>
+            <span style="opacity: .68;">97:72</span>
+          </div>
+          <div class="bubble left">
+            <strong>Planning</strong><br>
+            Schedule forward Facilities internal facility maintenance.<br>
+            <span style="opacity: .68;">18:84</span>
+          </div>
+          <div class="bubble left">
+            <strong>Data Services</strong><br>
+            Field kit supports index maintenance set coordinates planning guide reviews snapshot.<br>
+            <span style="opacity: .68;">56:72</span>
+          </div>
+          <div class="bubble right">
+            <strong>Training</strong><br>
+            Planning internal Quality Review regional demand summarizes.<br>
+            <span style="opacity: .68;">84:24</span>
+          </div>
+          <div class="bubble left">
+            <strong>Research</strong><br>
+            Survey panel aligns expands prepares Training report bundle.<br>
+            <span style="opacity: .68;">45:97</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="side">
+      <header>
+        <div class="smallcaps">Clearwater Planning</div>
+        <h1>Delivery Routing Thread</h1>
+        <p class="muted">Horizon Market Unit / Maple Junction</p>
+      </header>
+      <div class="cards">
+        <div class="card social-card">
+          <div class="smallcaps">Completion</div>
+          <div class="value">31</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Response Time</div>
+          <div class="value">590</div>
+        </div>
+        <div class="card social-card">
+          <div class="smallcaps">Coverage</div>
+          <div class="value">147</div>
+        </div>
+      </div>
+      <div class="card" style="padding: 24px;"><svg class="geo-icon" width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg"><rect width="52" height="52" rx="12" fill="#cdbb98" opacity="0.35"/><path d="M36 8 L64 36 L36 64 L8 36 Z" fill="#6b2d20"/><path d="M36 20 L52 36 L36 52 L20 36 Z" fill="#af7d42"/></svg></div>
+    </section>
+  </main>
+</body>
+</html>

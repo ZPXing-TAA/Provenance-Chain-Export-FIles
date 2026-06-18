@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1280,
+    "width": 720
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:e639e67f4b5bc01774eec09e787d20061be1da5485d38e7b51a5469cce4ef2f2",
+  "external_assets_used": false,
+  "font_family_id": "arial",
+  "html_path": "html/sample_000897.html",
+  "html_sha256": "sha256:b518013fb850e155771dcbc9343094fc0694c85a3e6a37ad72273b33d40f2505",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 5,
+    "charts": 2,
+    "sections": 3,
+    "tables": 0
+  },
+  "layout_id": "ecommerce_product_card__dark_dashboard__720x1280__s3_c5_t0_ch2",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:195000595ff509bbabd1c07998f922d81725e0fdbd161d8a1f68faf0d825e0cf",
+  "output_format": "png",
+  "output_path": "images/sample_000897.png",
+  "parent_sample_id": null,
+  "random_seed": 20261511,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000897",
+  "style_id": "dark_dashboard",
+  "template_family": "ecommerce_product_card",
+  "wordlist_version": "local_wordlists_v1"
+}

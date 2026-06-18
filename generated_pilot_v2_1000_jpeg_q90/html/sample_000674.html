@@ -1,0 +1,261 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Practical Overview Register</title>
+<style>
+  :root {
+    --bg: #0d1424;
+    --panel: #151f33;
+    --ink: #eef4ff;
+    --muted: #99aac3;
+    --accent: #6db7ff;
+    --accent2: #60d0a8;
+    --line: #293850;
+    --radius: 8px;
+    --shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1024px;
+    height: 1024px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+  .page {
+    width: 1024px;
+    height: 1024px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 52px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Finance</div>
+        <h1>Practical Overview Register</h1>
+      </div>
+      <div class="meta">
+        <div>Horizon Market Unit</div>
+        <div>July 8, 2024</div>
+        <div>QWT-5692-18</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Coordinates rapid maintenance set route planner transport capacity Procurement roadmap inventory review public Operations. Route planner public Operations publishes compact Field Support public rapid Public Programs index maintenance set.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Planning</td>
+            <td>Review</td>
+            <td>90</td>
+            <td>Apr 6</td>
+          </tr>
+          <tr>
+            <td>Service Desk</td>
+            <td>Planning</td>
+            <td>Review</td>
+            <td>78</td>
+            <td>Jul 4</td>
+          </tr>
+          <tr>
+            <td>Field Kit</td>
+            <td>Training</td>
+            <td>Ready</td>
+            <td>78</td>
+            <td>Feb 24</td>
+          </tr>
+          <tr>
+            <td>Maintenance Set</td>
+            <td>Finance</td>
+            <td>Delayed</td>
+            <td>74</td>
+            <td>Aug 8</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Training</td>
+            <td>Ready</td>
+            <td>71</td>
+            <td>Mar 18</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Public Programs</td>
+            <td>Monitoring</td>
+            <td>44</td>
+            <td>Feb 6</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Research</td>
+            <td>Draft</td>
+            <td>82</td>
+            <td>Jun 6</td>
+          </tr>
+          <tr>
+            <td>Route Planner</td>
+            <td>Public Programs</td>
+            <td>Monitoring</td>
+            <td>90</td>
+            <td>Sep 13</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Procurement</td>
+            <td>Delayed</td>
+            <td>78</td>
+            <td>Apr 9</td>
+          </tr>
+          <tr>
+            <td>Maintenance Set</td>
+            <td>Facilities</td>
+            <td>Queued</td>
+            <td>40</td>
+            <td>Aug 7</td>
+          </tr>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Planning</td>
+            <td>Queued</td>
+            <td>44</td>
+            <td>Jun 28</td>
+          </tr>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Research</td>
+            <td>Complete</td>
+            <td>86</td>
+            <td>Jul 6</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Delivery Routing</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

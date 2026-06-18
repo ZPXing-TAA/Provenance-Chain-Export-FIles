@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sensor Pack</title>
+<style>
+  :root {
+    --bg: #0d1424;
+    --panel: #151f33;
+    --ink: #eef4ff;
+    --muted: #99aac3;
+    --accent: #6db7ff;
+    --accent2: #60d0a8;
+    --line: #293850;
+    --radius: 8px;
+    --shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1240px;
+    height: 1754px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 17px;
+    line-height: 1.36;
+  }
+  .page {
+    width: 1240px;
+    height: 1754px;
+    padding: 64px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--panel);
+    box-shadow: var(--shadow);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .geo-icon {
+    display: block;
+  }
+  .style-dark_dashboard .pill,
+  .style-dark_dashboard .card {
+    background: var(--panel);
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 22px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 24px;
+      min-height: 0;
+    }
+    .visual {
+      padding: 34px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0)),
+        var(--panel);
+    }
+    .visual .frame {
+      width: min(72%, 420px);
+      aspect-ratio: 1;
+      border-radius: var(--radius);
+      border: 3px solid var(--line);
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--accent2), white 55%);
+    }
+    h1 {
+      margin: 0;
+      font-size: 72px;
+      line-height: 1.02;
+    }
+    .info {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .price {
+      font-size: 58px;
+      font-weight: 900;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .feature {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      color: var(--muted);
+    }
+    .specs {
+      padding: 18px;
+      overflow: hidden;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body class="style-dark_dashboard">
+  <main class="page">
+    <header>
+      <div class="smallcaps">Urban Systems Lab / Product Sheet</div>
+      <span class="pill">4.1 / 5</span>
+    </header>
+    <section class="product">
+      <div class="card visual">
+        <div class="frame"><svg class="geo-icon" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" rx="12" fill="#293850" opacity="0.35"/><circle cx="32.0" cy="32.0" r="20.48" fill="#6db7ff"/><circle cx="39.68" cy="23.04" r="8.32" fill="#60d0a8"/></svg></div>
+      </div>
+      <div class="card info">
+        <div>
+          <div class="smallcaps">Procurement</div>
+          <h1>Sensor Pack</h1>
+          <p class="muted">Organizes focused inventory review sensor pack packet energy usage summary planning guide.</p>
+        </div>
+        <div class="price">$63.45</div>
+        <div class="feature-grid">
+          <div class="feature">Notice Training compact quarterly Public Programs.</div>
+          <div class="feature">Rapid improves Research priority tracker.</div>
+          <div class="feature">Review notice forward improves quarterly.</div>
+          <div class="feature">Guide Quality Review expands survey panel education access field kit data notebook training module.</div>
+          <div class="feature">Compact planning guide review supports seasonal operations Training.</div>
+        </div>
+      </div>
+    </section>
+    <section class="card specs">
+      <table>
+        <tbody>
+          <tr>
+            <th>Resource Card</th>
+            <td>Research</td>
+            <td>Scheduled</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <th>Sensor Pack</th>
+            <td>Planning</td>
+            <td>Draft</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <th>Planning Guide</th>
+            <td>Procurement</td>
+            <td>Validated</td>
+            <td>93</td>
+          </tr>
+          <tr>
+            <th>Safety Packet</th>
+            <td>Finance</td>
+            <td>Review</td>
+            <td>63</td>
+          </tr>
+          <tr>
+            <th>Resource Card</th>
+            <td>Quality Review</td>
+            <td>Draft</td>
+            <td>67</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer"><span>BMB-6471-63</span><span>Pine Harbor</span></footer>
+  </main>
+</body>
+</html>

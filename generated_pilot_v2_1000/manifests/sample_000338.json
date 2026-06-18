@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:762406f268ffdd543865d1e7fcfe0dd5b06140534f38ba15e3de3d048e36b955",
+  "external_assets_used": false,
+  "font_family_id": "verdana",
+  "html_path": "html/sample_000338.html",
+  "html_sha256": "sha256:435db9a8fdf907b04fa9edaf0c19b9965a3395f71960bcf95d5ef6ef792ab32d",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 6,
+    "charts": 0,
+    "sections": 4,
+    "tables": 2
+  },
+  "layout_id": "mobile_chat_social_card__retro_newspaper__1280x720__s4_c6_t2_ch0",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:17b44ab2f672ae4f4e8115b0c028d4e4f8aba009f5e52f7ec19de5d0c1092b28",
+  "output_format": "png",
+  "output_path": "images/sample_000338.png",
+  "parent_sample_id": null,
+  "random_seed": 20260952,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000338",
+  "style_id": "retro_newspaper",
+  "template_family": "mobile_chat_social_card",
+  "wordlist_version": "local_wordlists_v1"
+}

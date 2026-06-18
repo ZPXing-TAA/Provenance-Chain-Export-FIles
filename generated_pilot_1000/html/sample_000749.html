@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Tracker Register</title>
+<style>
+  :root {
+    --bg: #fbf8ef;
+    --panel: #ffffff;
+    --ink: #2d2618;
+    --muted: #7c6f58;
+    --accent: #b98219;
+    --accent2: #e1bd67;
+    --line: #e9dec8;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .page {
+    width: 1080px;
+    height: 1350px;
+    padding: 38px;
+    background: var(--bg);
+  }
+  .smallcaps {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 700;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .rule {
+    height: 1px;
+    background: var(--line);
+  }
+  .pill {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.55);
+  }
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+  .chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    padding: 11px 10px;
+    font-size: 14px;
+  }
+  th {
+    color: var(--muted);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+</style>  <style>
+    .page {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 20px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: start;
+    }
+    h1 {
+      margin: 6px 0 0;
+      font-size: 57px;
+      line-height: 1.05;
+    }
+    .meta {
+      text-align: right;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .intro {
+      padding: 22px 26px;
+      font-size: 18px;
+      line-height: 1.42;
+    }
+    .table-wrap {
+      padding: 18px 22px 22px;
+      overflow: hidden;
+    }
+    tbody tr:nth-child(even) {
+      background: rgba(0, 0, 0, 0.025);
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <div class="smallcaps">Data Services</div>
+        <h1>Quarterly Tracker Register</h1>
+      </div>
+      <div class="meta">
+        <div>Cedar Field Office</div>
+        <div>June 25, 2024</div>
+        <div>CXU-2146-18</div>
+      </div>
+    </header>
+    <section class="card intro">
+      Energy usage Field Support summarizes updates roadmap service desk forward priority field kit summary reviews service desk. Summarizes service desk updated regional delivery routing schedule rapid balanced annual summarizes.
+    </section>
+    <section class="card table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Safety Packet</td>
+            <td>Field Support</td>
+            <td>Review</td>
+            <td>63</td>
+            <td>Apr 9</td>
+          </tr>
+          <tr>
+            <td>Resource Card</td>
+            <td>Research</td>
+            <td>Complete</td>
+            <td>52</td>
+            <td>Jun 18</td>
+          </tr>
+          <tr>
+            <td>Training Module</td>
+            <td>Procurement</td>
+            <td>Review</td>
+            <td>40</td>
+            <td>Jul 21</td>
+          </tr>
+          <tr>
+            <td>Data Notebook</td>
+            <td>Field Support</td>
+            <td>Queued</td>
+            <td>67</td>
+            <td>May 5</td>
+          </tr>
+          <tr>
+            <td>Field Kit</td>
+            <td>Procurement</td>
+            <td>Queued</td>
+            <td>93</td>
+            <td>Aug 9</td>
+          </tr>
+          <tr>
+            <td>Resource Card</td>
+            <td>Procurement</td>
+            <td>Scheduled</td>
+            <td>52</td>
+            <td>Sep 23</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Facilities</td>
+            <td>Scheduled</td>
+            <td>86</td>
+            <td>Dec 6</td>
+          </tr>
+          <tr>
+            <td>Report Bundle</td>
+            <td>Planning</td>
+            <td>Scheduled</td>
+            <td>86</td>
+            <td>Nov 22</td>
+          </tr>
+          <tr>
+            <td>Survey Panel</td>
+            <td>Finance</td>
+            <td>Validated</td>
+            <td>82</td>
+            <td>Sep 19</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Research</td>
+            <td>Monitoring</td>
+            <td>90</td>
+            <td>Apr 24</td>
+          </tr>
+          <tr>
+            <td>Sensor Pack</td>
+            <td>Data Services</td>
+            <td>Complete</td>
+            <td>78</td>
+            <td>Feb 7</td>
+          </tr>
+          <tr>
+            <td>Service Desk</td>
+            <td>Operations</td>
+            <td>On Track</td>
+            <td>63</td>
+            <td>Aug 24</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <footer class="footer">
+      <span>Facility Maintenance</span>
+      <span>Generated from local template source</span>
+    </footer>
+  </main>
+</body>
+</html>

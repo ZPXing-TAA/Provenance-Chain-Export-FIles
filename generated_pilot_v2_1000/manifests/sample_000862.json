@@ -1,0 +1,34 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 1024,
+    "width": 1024
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:9f06f6c5b97e792bbebd9292c6f57bfa83443e98ac6fa0cf353cb98e091401af",
+  "external_assets_used": false,
+  "font_family_id": "verdana",
+  "html_path": "html/sample_000862.html",
+  "html_sha256": "sha256:8f4f6a0cf90bec89d52dd52e8fdcb64bf0b0df1c4b71368b5a9c674f9bacd80d",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "cards": 5,
+    "charts": 1,
+    "sections": 5,
+    "tables": 0
+  },
+  "layout_id": "report_academic_abstract__mobile_app__1024x1024__s5_c5_t0_ch1",
+  "non_ai_generation": true,
+  "output_asset_hash": "sha256:7d9674de0e811e74eca63a7a374919711b3d455d950765e6d5367876da95221b",
+  "output_format": "png",
+  "output_path": "images/sample_000862.png",
+  "parent_sample_id": null,
+  "random_seed": 20261476,
+  "renderer": "playwright_chromium",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000862",
+  "style_id": "mobile_app",
+  "template_family": "report_academic_abstract",
+  "wordlist_version": "local_wordlists_v1"
+}

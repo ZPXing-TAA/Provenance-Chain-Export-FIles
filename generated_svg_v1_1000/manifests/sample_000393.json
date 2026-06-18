@@ -1,0 +1,38 @@
+{
+  "ai_inference_used": false,
+  "canvas_size": {
+    "height": 720,
+    "width": 1280
+  },
+  "chain_events": [],
+  "decoded_pixel_hash": "sha256:c88cc9d0627793eedb9a67100aebca73f37245dce70fa5c2f72a2961c7ed722a",
+  "external_assets_used": false,
+  "font_family_id": "arial",
+  "initial_digital_event": "digital_to_digital_file_export",
+  "label_status": "controlled_complete",
+  "last_acquisition_event": "none",
+  "layout_counts": {
+    "bars": 8,
+    "cards": 7,
+    "nodes": 5,
+    "paths": 2
+  },
+  "layout_id": "svg_infographic_card__mobile_app__1280x720__n5_c7_b8_p2",
+  "output_asset_hash": "sha256:28de822b2b8142d8f0d77ca7413c36a2d012a329c8ad5152524432b25ccd6915",
+  "output_format": "png",
+  "output_path": "images/sample_000393.png",
+  "parent_asset_hashes": [
+    "sha256:62e2e233e0f8bb783e9c0b85116a4d4aa1a14055f94e33136fc4a8a91b0967e0"
+  ],
+  "random_seed": 20261007,
+  "renderer": "playwright_chromium_svg_rasterizer",
+  "renderer_version": "playwright 1.60.0; chromium 148.0.7778.96",
+  "sample_id": "sample_000393",
+  "schema_version": "provenance_chain_v1",
+  "source_asset_hash": "sha256:62e2e233e0f8bb783e9c0b85116a4d4aa1a14055f94e33136fc4a8a91b0967e0",
+  "source_path": "svg/sample_000393.svg",
+  "source_type": "svg",
+  "style_id": "mobile_app",
+  "template_family": "svg_infographic_card",
+  "wordlist_version": "local_wordlists_v1"
+}
