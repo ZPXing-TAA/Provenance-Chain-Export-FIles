@@ -1,3 +1,6 @@
+# ===== Generated output directories =====
+generated_*/
+
 # ===== Image files =====
 *.png
 *.jpg
